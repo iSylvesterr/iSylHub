@@ -3287,7 +3287,7 @@ Components.Window = (function()
 
 		Window.TabDisplay = New("TextLabel", {
 			RichText = true,
-			Text = "Tester",
+			Text = Window.SelectedTab and Window.SelectedTab.Name or "Home",
 			TextTransparency = 0,
 			FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
 			TextSize = 28,
