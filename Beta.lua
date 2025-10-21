@@ -3286,7 +3286,7 @@ Components.Window = (function()
 
 		Window.TabDisplay = New("TextLabel", {
 			RichText = true,
-			Text = "Tab",
+			Text = "Welcome To iSylHub",
 			TextTransparency = 0,
 			FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
 			TextSize = 28,
