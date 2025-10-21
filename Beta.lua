@@ -2151,7 +2151,7 @@ Components.Tab = (function()
 		local Tab = {
 			Selected = false,
 			Name = Title,
-			Type = "Tab",
+			Type = "Tester",
 		}
 
 		if not fischbypass then 
@@ -2169,7 +2169,7 @@ Components.Tab = (function()
 			BackgroundTransparency = 1,
 			Parent = Parent,
 			ThemeTag = {
-				BackgroundColor3 = "Tab",
+				BackgroundColor3 = "Tester",
 			},
 		}, {
 			New("UICorner", {
@@ -3287,7 +3287,7 @@ Components.Window = (function()
 
 		Window.TabDisplay = New("TextLabel", {
 			RichText = true,
-			Text = "Tab",
+			Text = "Tester",
 			TextTransparency = 0,
 			FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
 			TextSize = 28,
