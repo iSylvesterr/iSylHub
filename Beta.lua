@@ -2141,7 +2141,7 @@ Components.Tab = (function()
 	end
 
 	function TabModule:New(Title, Icon, Parent)
-		if Title == "Tab" then return end
+		if not Title or Title == "Tab" then return end
 									
 		local Window = TabModule.Window
 		local Elements = Library.Elements
