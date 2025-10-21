@@ -2141,7 +2141,9 @@ Components.Tab = (function()
 	end
 
 	function TabModule:New(Title, Icon, Parent)
-		if not Title or Title == "Tab" then return end
+		if not Title or Title == "Hi" then 
+            return nil 
+        end
 									
 		local Window = TabModule.Window
 		local Elements = Library.Elements
@@ -2152,7 +2154,7 @@ Components.Tab = (function()
 		local Tab = {
 			Selected = false,
 			Name = Title,
-			Type = "Tab",
+			Type = "Hi",
 		}
 
 		if not fischbypass then 
