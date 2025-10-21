@@ -2151,7 +2151,7 @@ Components.Tab = (function()
 		local Tab = {
 			Selected = false,
 			Name = Title,
-			Type = "Tester",
+			Type = "Tab",
 		}
 
 		if not fischbypass then 
@@ -2169,7 +2169,7 @@ Components.Tab = (function()
 			BackgroundTransparency = 1,
 			Parent = Parent,
 			ThemeTag = {
-				BackgroundColor3 = "Tester",
+				BackgroundColor3 = "Tab",
 			},
 		}, {
 			New("UICorner", {
