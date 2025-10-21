@@ -3284,21 +3284,25 @@ Components.Window = (function()
 			SearchFrame,
 		})
 
-		Window.TabDisplay = New("TextLabel", {
-			RichText = true,
-			Text = "Tab",
-			TextTransparency = 0,
-			FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
-			TextSize = 28,
-			TextXAlignment = "Left",
-			TextYAlignment = "Center",
-			Size = UDim2.new(1, -16, 0, 28),
-			Position = UDim2.fromOffset(Window.TabWidth + 26, 56),
-			BackgroundTransparency = 1,
-			ThemeTag = {
-				TextColor3 = "Text",
-			},
-		})
+		-- Secondary centered subtitle under TabDisplay (welcome / english-only message)
+      Window.SubTitle = New("TextLabel", {
+          RichText = true,
+          Text = "WELCOME TO iSylHub\nEnglish only: Welcome to the script hub. Use responsibly and follow the rules.",
+          TextTransparency = 0,
+          -- pakai font yang sama jika ada; ganti asset id bila perlu
+          FontFace = Font.new("rbxassetid://12181727009"), 
+          TextSize = 18,
+          TextXAlignment = "Center",
+          TextYAlignment = "Center",
+          -- Lebar mengisi minus padding kiri/kanan agar terlihat 'tengah' di window
+          Size = UDim2.new(1, -32, 0, 40),
+         -- Posisi: sedikit di bawah TabDisplay (TabDisplay punya height 28), beri margin 8
+          Position = UDim2.fromOffset(16, 36),
+          BackgroundTransparency = 1,
+          ThemeTag = {
+          TextColor3 = "Text",
+        },
+        })
 
 		Window.ContainerHolder = New("Frame", {
 			Size = UDim2.fromScale(1, 1),
