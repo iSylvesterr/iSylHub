@@ -3287,7 +3287,7 @@ Components.Window = (function()
 
 		Window.TabDisplay = New("TextLabel", {
 			RichText = true,
-			Text = Window.SelectedTab.Name,
+			Text = "WELCOME TO iSylHub,
 			bTextTransparency = 0,
 			FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
 			TextSize = 28,
@@ -3295,18 +3295,6 @@ Components.Window = (function()
 			TextYAlignment = "Center",
 			Size = UDim2.new(1, -16, 0, 28),
 			Position = UDim2.fromOffset(Window.TabWidth + 26, 56),
-			BackgroundTransparency = 1,
-			ThemeTag = {
-				TextColor3 = "Text",
-			},
-		})
-
-	    -- Update tulisan TabDisplay saat tab diganti
-       Window:OnTabSelected(function(tab)
-          if Window.TabDisplay then
-              Window.TabDisplay.Text = tab.Name
-           end
-        end)
 
 		Window.ContainerHolder = New("Frame", {
 			Size = UDim2.fromScale(1, 1),
