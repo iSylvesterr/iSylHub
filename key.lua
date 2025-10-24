@@ -1,6 +1,5 @@
 -- =========================
--- iSylHub FluentPlus + Key System (Black-Red Fluent + HWID Kick + Auto-global + Fixed Fade)
--- Full combined loader: UI preserved, sets globals for third-party loaders, supports direct global key usage
+-- iSylHub FluentPlus + Key System (Black-Red Fluent + HWID Kick + Fixed Fade)
 -- =========================
 
 -- =========================
@@ -23,16 +22,16 @@ local Analytics = game:GetService("RbxAnalyticsService")
 local Player = Players.LocalPlayer
 
 -- =========================
--- UTIL: safe http get
+-- SAFE HTTP GET
 -- =========================
 local function safe_get(url)
 	local ok, res = pcall(function()
 		if syn and syn.request then
-			return syn.request({Url = url, Method = "GET"}).Body
+			return syn.request({Url=url, Method="GET"}).Body
 		elseif request then
-			return request({Url = url, Method = "GET"}).Body
+			return request({Url=url, Method="GET"}).Body
 		elseif http and http.request then
-			return http.request({Url = url, Method = "GET"}).Body
+			return http.request({Url=url, Method="GET"}).Body
 		elseif game.HttpGet then
 			return game:HttpGet(url)
 		else
@@ -74,152 +73,101 @@ local function do_hwid_kick()
 end
 
 -- =========================
--- LOAD MAIN SCRIPT (safe)
+-- LOAD MAIN SCRIPT (with proper fade-out)
 -- =========================
-local function load_main_script()
-	local body = safe_get(MAIN_SCRIPT_URL)
-	if not body then
-		warn("[iSylHub] Gagal ambil main script.")
-		return
-	end
-	local fn, err = (loadstring and loadstring(body)) or load(body)
-	if not fn then
-		warn("[iSylHub] Gagal compile main script:", err)
-		return
-	end
-	local ok, runErr = pcall(fn)
-	if not ok then
-		warn("[iSylHub] Error saat menjalankan main script:", runErr)
-	else
-		print("[iSylHub] Main script executed successfully ✅")
-	end
-end
-
--- =========================
--- on_key_valid: set globals, fade UI, load main
--- =========================
-local function set_globals_for_main(key)
-	pcall(function()
-		if getgenv then
-			-- common names to maximize compatibility
-			getgenv().script_key = key
-			getgenv().key = key
-			getgenv().Key = key
-			getgenv().KEY = key
-			getgenv().auth_key = key
-			getgenv().user_key = key
-			getgenv().iSyl_key = key
-		end
-		_G.script_key = key
-		_G.key = key
-		_G.Key = key
-		_G.KEY = key
-	end)
-end
-
 local function on_key_valid(key)
-	-- 1) Save cache
 	save_cache(key)
 
-	-- 2) Set globals so external/third-party loaders detect the key immediately
-	set_globals_for_main(key)
-
-	-- 3) Fade-out UI then destroy (safe)
-	if screen and screen.Parent and frame then
-		pcall(function()
-			-- fade frame background
-			local ok, tweenErr = pcall(function()
-				TweenService:Create(frame, TweenInfo.new(0.35, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1}):Play()
-			end)
-			-- fade text elements
-			for _, v in pairs(frame:GetDescendants()) do
-				if v:IsA("TextLabel") or v:IsA("TextBox") or v:IsA("TextButton") then
-					pcall(function()
-						TweenService:Create(v, TweenInfo.new(0.3), {TextTransparency = 1}):Play()
-					end)
-				elseif v:IsA("ImageLabel") or v:IsA("ImageButton") then
-					pcall(function()
-						TweenService:Create(v, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
-					end)
-				elseif v:IsA("Frame") and v ~= frame then
-					pcall(function()
-						TweenService:Create(v, TweenInfo.new(0.3), {BackgroundTransparency = 1}):Play()
-					end)
-				end
+	-- fade-out halus sebelum destroy
+	if screen and screen.Parent then
+		local fade = TweenService:Create(frame, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1})
+		fade:Play()
+		for _,v in pairs(frame:GetDescendants()) do
+			if v:IsA("TextLabel") or v:IsA("TextBox") or v:IsA("TextButton") then
+				TweenService:Create(v, TweenInfo.new(0.3), {TextTransparency = 1}):Play()
 			end
-			task.wait(0.45)
-			if screen and screen.Parent then
-				pcall(function() screen:Destroy() end)
-			end
-		end)
+		end
+		task.wait(0.45)
+		screen:Destroy()
 	end
 
-	-- 4) small delay to ensure the environment is clean, then load main script
-	task.delay(0.12, function()
-		load_main_script()
-	end)
+	-- load main script
+	task.wait(0.2)
+	local body = safe_get(MAIN_SCRIPT_URL)
+	if body then
+		local fn, err = loadstring(body)
+		if fn then
+			local ok, err2 = pcall(fn)
+			if not ok then warn("Error run main script:", err2) end
+		else
+			warn("Gagal compile main script:", err)
+		end
+	else
+		warn("Gagal ambil main script.")
+	end
 end
 
 -- =========================
--- AUTO-LOGIN (cache / existing globals)
+-- AUTO DETECT GLOBAL KEY
 -- =========================
--- If user already set global key before running this loader,
--- detect and auto-validate using that key (skip UI).
-local function find_existing_global_key()
-	local candidates = {}
-	pcall(function()
-		if getgenv then
-			for _, name in ipairs({"script_key","key","Key","KEY","auth_key","user_key","iSyl_key"}) do
-				local ok, val = pcall(function() return getgenv()[name] end)
-				if ok and type(val) == "string" and val:match("%S") then
-					table.insert(candidates, val)
-				end
-			end
+local function detect_global_key()
+	local possible = {
+		getgenv and getgenv().script_key,
+		getgenv and getgenv().key,
+		getgenv and getgenv().Key,
+		getgenv and getgenv().KEY,
+		_G.script_key, _G.key, _G.Key, _G.KEY,
+		script_key, key, Key, KEY
+	}
+	for _, v in pairs(possible) do
+		if typeof(v) == "string" and v ~= "" then
+			return v
 		end
-		-- also check _G and raw globals (some users set 'script_key' as a global var)
-		for _, name in ipairs({"script_key","key","Key","KEY"}) do
-			local ok, val = pcall(function() return _G[name] end)
-			if ok and type(val) == "string" and val:match("%S") then
-				table.insert(candidates, val)
-			end
-		end
-		-- check global direct variable (less common in this env, but try)
-		local ok, val = pcall(function() return script_key end)
-		if ok and type(val) == "string" and val:match("%S") then table.insert(candidates, val) end
-	end)
-	return candidates[1] -- return first found
+	end
+	return nil
 end
 
--- try: 1) global set by user, 2) cached key
-local pre_existing_key = find_existing_global_key()
-if pre_existing_key then
-	-- found a global key: trust it, set globals (normalize names) and load main script directly
-	set_globals_for_main(pre_existing_key)
-	-- load main script right away (do not show UI)
-	task.defer(function() load_main_script() end)
-	-- stop here, do not create UI
-	return
+local globalKey = detect_global_key()
+if globalKey then
+	print("[iSylHub] Detected global key:", globalKey)
+	local hwid = Analytics:GetClientId()
+	local url = KEY_CHECK_URL .. "?key=" .. HttpService:UrlEncode(globalKey) .. "&hwid=" .. HttpService:UrlEncode(hwid)
+	local res = safe_get(url)
+	if res then
+		local ok,json = pcall(function() return HttpService:JSONDecode(res) end)
+		if ok and type(json)=="table" then
+			if is_hwid_reset_response(json) then do_hwid_kick() return end
+			if json.ok then
+				on_key_valid(globalKey)
+				return -- ✅ langsung load script, tanpa UI
+			end
+		end
+	end
 end
 
+-- =========================
+-- AUTO-LOGIN CACHE
+-- =========================
 local cachedKey = load_cache()
 if cachedKey then
 	if AUTO_VERIFY then
 		local hwid = Analytics:GetClientId()
-		local url = string.format("%s?key=%s&hwid=%s", KEY_CHECK_URL, HttpService:UrlEncode(cachedKey), HttpService:UrlEncode(hwid))
+		local url = KEY_CHECK_URL .. "?key=" .. HttpService:UrlEncode(cachedKey) .. "&hwid=" .. HttpService:UrlEncode(hwid)
 		local res = safe_get(url)
 		if res then
 			local ok,json = pcall(function() return HttpService:JSONDecode(res) end)
 			if ok and type(json)=="table" then
 				if is_hwid_reset_response(json) then do_hwid_kick() return end
 				if json.ok then on_key_valid(cachedKey) return
-				else if isfile and delfile then pcall(function() delfile(CACHE_PATH) end) end end
+				else if isfile and delfile then pcall(function() delfile(CACHE_PATH) end) end
+				end
 			end
 		elseif USE_CACHE_OFFLINE then on_key_valid(cachedKey) return end
 	else on_key_valid(cachedKey) return end
 end
 
 -- =========================
--- BUILD FLUENT BLACK-RED UI (DESIGN PRESERVED)
+-- BUILD FLUENT BLACK-RED UI
 -- =========================
 pcall(function()
 	local old = Player:FindFirstChild("PlayerGui") and Player.PlayerGui:FindFirstChild("iSylKeyUI")
@@ -272,10 +220,7 @@ tb.TextColor3 = Color3.fromRGB(255,255,255)
 tb.BackgroundColor3 = Color3.fromRGB(30,30,30)
 tb.TextScaled = true
 tb.PlaceholderColor3 = Color3.fromRGB(180,180,180)
-tb.Parent = frame
-
-local tbCorner = Instance.new("UICorner", tb)
-tbCorner.CornerRadius = UDim.new(0,6)
+Instance.new("UICorner", tb).CornerRadius = UDim.new(0,6)
 
 local status = Instance.new("TextLabel", frame)
 status.Size = UDim2.fromScale(0.9,0.13)
@@ -285,7 +230,6 @@ status.TextColor3 = Color3.fromRGB(255,200,120)
 status.TextScaled = true
 status.Text = ""
 status.Font = Enum.Font.GothamMedium
-status.Parent = frame
 
 local btnCheck = Instance.new("TextButton", frame)
 btnCheck.Size = UDim2.fromScale(0.43,0.2)
@@ -295,7 +239,6 @@ btnCheck.BackgroundColor3 = Color3.fromRGB(25,25,25)
 btnCheck.TextColor3 = Color3.fromRGB(255,90,90)
 btnCheck.TextScaled = true
 btnCheck.Font = Enum.Font.GothamBold
-btnCheck.Parent = frame
 Instance.new("UICorner", btnCheck).CornerRadius = UDim.new(0,6)
 
 local btnGet = Instance.new("TextButton", frame)
@@ -306,10 +249,9 @@ btnGet.BackgroundColor3 = Color3.fromRGB(25,25,25)
 btnGet.TextColor3 = Color3.fromRGB(255,90,90)
 btnGet.TextScaled = true
 btnGet.Font = Enum.Font.GothamBold
-btnGet.Parent = frame
 Instance.new("UICorner", btnGet).CornerRadius = UDim.new(0,6)
 
--- Animasi fade-in (preserve original feel)
+-- Animasi fade-in
 frame.BackgroundTransparency = 1
 for _,v in pairs(frame:GetDescendants()) do
 	if v:IsA("TextLabel") or v:IsA("TextBox") or v:IsA("TextButton") then
