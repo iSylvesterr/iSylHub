@@ -7,7 +7,7 @@
 -- =========================
 local KEY_CHECK_URL    = "https://victor-lineable-detersively.ngrok-free.dev/check"
 local GET_KEY_URL      = "https://discord.gg/9B3sxTxD2E"
-local MAIN_SCRIPT_URL  = "https://pastebin.com/raw/GNKjZEMq"
+local MAIN_SCRIPT_URL  = "https://raw.githubusercontent.com/iSylvesterr/fishit/refs/heads/main/fishit.lua"
 local CACHE_PATH       = "iSyl_key_cache.txt"
 local AUTO_VERIFY      = true
 local USE_CACHE_OFFLINE = true
