@@ -5,7 +5,7 @@
 -- =========================
 -- CONFIG
 -- =========================
-local KEY_CHECK_URL    = "https://server.isylhub.workers.dev/api/check"
+local KEY_CHECK_URL    = "https://server.isylhub.workers.dev/api/keys/check"
 local GET_KEY_URL      = "https://discord.gg/9B3sxTxD2E"
 local MAIN_SCRIPT_URL  = "https://raw.githubusercontent.com/iSylvesterr/fishit/refs/heads/main/fishit.lua"
 local CACHE_PATH       = "iSyl_key_cache.txt"
