@@ -1,0 +1,2177 @@
+[
+  {
+    "id": 43,
+    "name": "Reef Chromis",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=130761855658346",
+    "assetId": "130761855658346",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227358/fishes/fishes/130761855658346.png"
+  },
+  {
+    "id": 15,
+    "name": "Abyss Seahorse",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=140212951494890",
+    "assetId": "140212951494890",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227426/fishes/fishes/140212951494890.png"
+  },
+  {
+    "id": 20,
+    "name": "Ash Basslet",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=89467763428838",
+    "assetId": "89467763428838",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227598/fishes/fishes/89467763428838.png"
+  },
+  {
+    "id": 17,
+    "name": "Astra Damsel",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=80597542368624",
+    "assetId": "80597542368624",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227504/fishes/fishes/80597542368624.png"
+  },
+  {
+    "id": 66,
+    "name": "Azure Damsel",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=82037285284063",
+    "assetId": "82037285284063",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227520/fishes/fishes/82037285284063.png"
+  },
+  {
+    "id": 44,
+    "name": "Banded Butterfly",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=108599906664305",
+    "assetId": "108599906664305",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227151/fishes/fishes/108599906664305.png"
+  },
+  {
+    "id": 22,
+    "name": "Blue Lobster",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=79569787883962",
+    "assetId": "79569787883962",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227497/fishes/fishes/79569787883962.png"
+  },
+  {
+    "id": 47,
+    "name": "Blueflame Ray",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=113303332536600",
+    "assetId": "113303332536600",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227205/fishes/fishes/113303332536600.png"
+  },
+  {
+    "id": 45,
+    "name": "Boa Angelfish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=132840818442941",
+    "assetId": "132840818442941",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227372/fishes/fishes/132840818442941.png"
+  },
+  {
+    "id": 37,
+    "name": "Bumblebee Grouper",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=138718017852833",
+    "assetId": "138718017852833",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227420/fishes/fishes/138718017852833.png"
+  },
+  {
+    "id": 59,
+    "name": "Candy Butterfly",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=118627817589849",
+    "assetId": "118627817589849",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227252/fishes/fishes/118627817589849.png"
+  },
+  {
+    "id": 18,
+    "name": "Charmed Tang",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=115703943090504",
+    "assetId": "115703943090504",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227233/fishes/fishes/115703943090504.png"
+  },
+  {
+    "id": 53,
+    "name": "Chrome Tuna",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=103021560011734",
+    "assetId": "103021560011734",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227114/fishes/fishes/103021560011734.png"
+  },
+  {
+    "id": 64,
+    "name": "Clownfish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=98117815811053",
+    "assetId": "98117815811053",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227657/fishes/fishes/98117815811053.png"
+  },
+  {
+    "id": 19,
+    "name": "Coal Tang",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=92488575546885",
+    "assetId": "92488575546885",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227617/fishes/fishes/92488575546885.png"
+  },
+  {
+    "id": 67,
+    "name": "Copperband Butterfly",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=79518413256091",
+    "assetId": "79518413256091",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227495/fishes/fishes/79518413256091.png"
+  },
+  {
+    "id": 31,
+    "name": "Corazon Damsel",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=117026260439113",
+    "assetId": "117026260439113",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227240/fishes/fishes/117026260439113.png"
+  },
+  {
+    "id": 57,
+    "name": "Cow Clownfish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=88952725333000",
+    "assetId": "88952725333000",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227586/fishes/fishes/88952725333000.png"
+  },
+  {
+    "id": 71,
+    "name": "Darwin Clownfish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=109996187340520",
+    "assetId": "109996187340520",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227167/fishes/fishes/109996187340520.png"
+  },
+  {
+    "id": 26,
+    "name": "Domino Damsel",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=100965955122629",
+    "assetId": "100965955122629",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227099/fishes/fishes/100965955122629.png"
+  },
+  {
+    "id": 70,
+    "name": "Dorhey Tang",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=136891625122640",
+    "assetId": "136891625122640",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227407/fishes/fishes/136891625122640.png"
+  },
+  {
+    "id": 75,
+    "name": "Dotted Stingray",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=132465838670740",
+    "assetId": "132465838670740",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227370/fishes/fishes/132465838670740.png"
+  },
+  {
+    "id": 14,
+    "name": "Enchanted Angelfish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=108347802265821",
+    "assetId": "108347802265821",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227149/fishes/fishes/108347802265821.png"
+  },
+  {
+    "id": 41,
+    "name": "Fire Goby",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=94533805203782",
+    "assetId": "94533805203782",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227635/fishes/fishes/94533805203782.png"
+  },
+  {
+    "id": 49,
+    "name": "Firecoal Damsel",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=108870635586928",
+    "assetId": "108870635586928",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227155/fishes/fishes/108870635586928.png"
+  },
+  {
+    "id": 68,
+    "name": "Flame Angelfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=128385926161840",
+    "assetId": "128385926161840",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227328/fishes/fishes/128385926161840.png"
+  },
+  {
+    "id": 25,
+    "name": "Greenbee Grouper",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=79015880866732",
+    "assetId": "79015880866732",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227491/fishes/fishes/79015880866732.png"
+  },
+  {
+    "id": 52,
+    "name": "Hammerhead Shark",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=91373020648344",
+    "assetId": "91373020648344",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227609/fishes/fishes/91373020648344.png"
+  },
+  {
+    "id": 21,
+    "name": "Hawks Turtle",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=129453304232199",
+    "assetId": "129453304232199",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227346/fishes/fishes/129453304232199.png"
+  },
+  {
+    "id": 24,
+    "name": "Starjam Tang",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=129447526017878",
+    "assetId": "129447526017878",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227344/fishes/fishes/129447526017878.png"
+  },
+  {
+    "id": 46,
+    "name": "Jennifer Dottyback",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=82888113748973",
+    "assetId": "82888113748973",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227530/fishes/fishes/82888113748973.png"
+  },
+  {
+    "id": 60,
+    "name": "Jewel Tang",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=130344776739450",
+    "assetId": "130344776739450",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227356/fishes/fishes/130344776739450.png"
+  },
+  {
+    "id": 40,
+    "name": "Kau Cardinal",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=120735400809864",
+    "assetId": "120735400809864",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227274/fishes/fishes/120735400809864.png"
+  },
+  {
+    "id": 72,
+    "name": "Korean Angelfish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=134484917450451",
+    "assetId": "134484917450451",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227384/fishes/fishes/134484917450451.png"
+  },
+  {
+    "id": 48,
+    "name": "Lavafin Tuna",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=96111934641941",
+    "assetId": "96111934641941",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227649/fishes/fishes/96111934641941.png"
+  },
+  {
+    "id": 36,
+    "name": "Lobster",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=106973499045957",
+    "assetId": "106973499045957",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227140/fishes/fishes/106973499045957.png"
+  },
+  {
+    "id": 34,
+    "name": "Loggerhead Turtle",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=91953712080535",
+    "assetId": "91953712080535",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227613/fishes/fishes/91953712080535.png"
+  },
+  {
+    "id": 38,
+    "name": "Longnose Butterfly",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=78488362036598",
+    "assetId": "78488362036598",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227487/fishes/fishes/78488362036598.png"
+  },
+  {
+    "id": 16,
+    "name": "Magic Tang",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=88573644059627",
+    "assetId": "88573644059627",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227581/fishes/fishes/88573644059627.png"
+  },
+  {
+    "id": 50,
+    "name": "Magma Goby",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=136836819813966",
+    "assetId": "136836819813966",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227403/fishes/fishes/136836819813966.png"
+  },
+  {
+    "id": 54,
+    "name": "Manta Ray",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=88385941559907",
+    "assetId": "88385941559907",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227579/fishes/fishes/88385941559907.png"
+  },
+  {
+    "id": 56,
+    "name": "Maroon Butterfly",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=0",
+    "assetId": "0"
+  },
+  {
+    "id": 23,
+    "name": "Maze Angelfish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=133123622412997",
+    "assetId": "133123622412997",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227376/fishes/fishes/133123622412997.png"
+  },
+  {
+    "id": 55,
+    "name": "Moorish Idol",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=99527607304877",
+    "assetId": "99527607304877",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227666/fishes/fishes/99527607304877.png"
+  },
+  {
+    "id": 117,
+    "name": "Bandit Angelfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=86776001616210",
+    "assetId": "86776001616210",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227565/fishes/fishes/86776001616210.png"
+  },
+  {
+    "id": 116,
+    "name": "Zoster Butterfly",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=80869011808607",
+    "assetId": "80869011808607",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227505/fishes/fishes/80869011808607.png"
+  },
+  {
+    "id": 32,
+    "name": "Orangy Goby",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=80870534603019",
+    "assetId": "80870534603019",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227507/fishes/fishes/80870534603019.png"
+  },
+  {
+    "id": 27,
+    "name": "Panther Grouper",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=110559683316227",
+    "assetId": "110559683316227",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227182/fishes/fishes/110559683316227.png"
+  },
+  {
+    "id": 35,
+    "name": "Prismy Seahorse",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=105300029672501",
+    "assetId": "105300029672501",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227131/fishes/fishes/105300029672501.png"
+  },
+  {
+    "id": 29,
+    "name": "Scissortail Dartfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=90918658215983",
+    "assetId": "90918658215983",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227604/fishes/fishes/90918658215983.png"
+  },
+  {
+    "id": 42,
+    "name": "Shrimp Goby",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=79722493639079",
+    "assetId": "79722493639079",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227499/fishes/fishes/79722493639079.png"
+  },
+  {
+    "id": 63,
+    "name": "Skunk Tilefish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=117649671337741",
+    "assetId": "117649671337741",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227243/fishes/fishes/117649671337741.png"
+  },
+  {
+    "id": 33,
+    "name": "Specked Butterfly",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=116155560772333",
+    "assetId": "116155560772333",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227234/fishes/fishes/116155560772333.png"
+  },
+  {
+    "id": 65,
+    "name": "Strawberry Dotty",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=113189737934915",
+    "assetId": "113189737934915",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227203/fishes/fishes/113189737934915.png"
+  },
+  {
+    "id": 39,
+    "name": "Sushi Cardinal",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=104436232234256",
+    "assetId": "104436232234256",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227120/fishes/fishes/104436232234256.png"
+  },
+  {
+    "id": 30,
+    "name": "Tricolore Butterfly",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=138769463668635",
+    "assetId": "138769463668635",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227422/fishes/fishes/138769463668635.png"
+  },
+  {
+    "id": 74,
+    "name": "Unicorn Tang",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=85435653124474",
+    "assetId": "85435653124474",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227556/fishes/fishes/85435653124474.png"
+  },
+  {
+    "id": 62,
+    "name": "Vintage Blue Tang",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=136876564868613",
+    "assetId": "136876564868613",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227405/fishes/fishes/136876564868613.png"
+  },
+  {
+    "id": 58,
+    "name": "Vintage Damsel",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=135465556501628",
+    "assetId": "135465556501628",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227394/fishes/fishes/135465556501628.png"
+  },
+  {
+    "id": 51,
+    "name": "Volcanic Basslet",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=73441603866106",
+    "assetId": "73441603866106",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227456/fishes/fishes/73441603866106.png"
+  },
+  {
+    "id": 28,
+    "name": "White Clownfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=94709558139061",
+    "assetId": "94709558139061",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227637/fishes/fishes/94709558139061.png"
+  },
+  {
+    "id": 69,
+    "name": "Yello Damselfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=125066072333378",
+    "assetId": "125066072333378",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227305/fishes/fishes/125066072333378.png"
+  },
+  {
+    "id": 73,
+    "name": "Yellowfin Tuna",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=86565235696991",
+    "assetId": "86565235696991",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227563/fishes/fishes/86565235696991.png"
+  },
+  {
+    "id": 61,
+    "name": "Yellowstate Angelfish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=82807541331151",
+    "assetId": "82807541331151",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227528/fishes/fishes/82807541331151.png"
+  },
+  {
+    "id": 190,
+    "name": "Salmon",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=125238936461158",
+    "assetId": "125238936461158",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227307/fishes/fishes/125238936461158.png"
+  },
+  {
+    "id": 82,
+    "name": "Blob Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=120294742064292",
+    "assetId": "120294742064292",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227268/fishes/fishes/120294742064292.png"
+  },
+  {
+    "id": 89,
+    "name": "Volsail Tang",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=129946055426678",
+    "assetId": "129946055426678",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227350/fishes/fishes/129946055426678.png"
+  },
+  {
+    "id": 88,
+    "name": "Rockform Cardianl",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=120329148296828",
+    "assetId": "120329148296828",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227270/fishes/fishes/120329148296828.png"
+  },
+  {
+    "id": 87,
+    "name": "Lava Butterfly",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=121441755541039",
+    "assetId": "121441755541039",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227282/fishes/fishes/121441755541039.png"
+  },
+  {
+    "id": 86,
+    "name": "Slurpfish Chromis",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=73157781682607",
+    "assetId": "73157781682607",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227453/fishes/fishes/73157781682607.png"
+  },
+  {
+    "id": 92,
+    "name": "Festive Goby",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=131719468046777",
+    "assetId": "131719468046777",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227364/fishes/fishes/131719468046777.png"
+  },
+  {
+    "id": 91,
+    "name": "Mistletoe Damsel",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=119896827350397",
+    "assetId": "119896827350397",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227266/fishes/fishes/119896827350397.png"
+  },
+  {
+    "id": 90,
+    "name": "Gingerbread Tang",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=81165959957452",
+    "assetId": "81165959957452",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227514/fishes/fishes/81165959957452.png"
+  },
+  {
+    "id": 99,
+    "name": "Great Christmas Whale",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=71302255255094",
+    "assetId": "71302255255094",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227439/fishes/fishes/71302255255094.png"
+  },
+  {
+    "id": 94,
+    "name": "Gingerbread Clownfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=76627481663195",
+    "assetId": "76627481663195",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227477/fishes/fishes/76627481663195.png"
+  },
+  {
+    "id": 97,
+    "name": "Gingerbread Turtle",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=105391647263950",
+    "assetId": "105391647263950",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227134/fishes/fishes/105391647263950.png"
+  },
+  {
+    "id": 98,
+    "name": "Gingerbread Shark",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=134485196164902",
+    "assetId": "134485196164902",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227386/fishes/fishes/134485196164902.png"
+  },
+  {
+    "id": 93,
+    "name": "Christmastree Longnose",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=121538254026074",
+    "assetId": "121538254026074",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227284/fishes/fishes/121538254026074.png"
+  },
+  {
+    "id": 95,
+    "name": "Candycane Lobster",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=81306607650028",
+    "assetId": "81306607650028",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227516/fishes/fishes/81306607650028.png"
+  },
+  {
+    "id": 96,
+    "name": "Festive Pufferfish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=111730193849173",
+    "assetId": "111730193849173",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227190/fishes/fishes/111730193849173.png"
+  },
+  {
+    "id": 106,
+    "name": "Blue-Banded Goby",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=137187691311291",
+    "assetId": "137187691311291",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227415/fishes/fishes/137187691311291.png"
+  },
+  {
+    "id": 107,
+    "name": "Blumato Clownfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=135433263876257",
+    "assetId": "135433263876257",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227392/fishes/fishes/135433263876257.png"
+  },
+  {
+    "id": 108,
+    "name": "Conspi Angelfish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=70666845671780",
+    "assetId": "70666845671780",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227431/fishes/fishes/70666845671780.png"
+  },
+  {
+    "id": 109,
+    "name": "Fade Tang",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=99713500880459",
+    "assetId": "99713500880459",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227668/fishes/fishes/99713500880459.png"
+  },
+  {
+    "id": 110,
+    "name": "Lined Cardinal Fish",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=96973556889996",
+    "assetId": "96973556889996",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227651/fishes/fishes/96973556889996.png"
+  },
+  {
+    "id": 111,
+    "name": "Masked Angelfish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=85192354177842",
+    "assetId": "85192354177842",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227548/fishes/fishes/85192354177842.png"
+  },
+  {
+    "id": 112,
+    "name": "Pygmy Goby",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=128173847216247",
+    "assetId": "128173847216247",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227324/fishes/fishes/128173847216247.png"
+  },
+  {
+    "id": 113,
+    "name": "Sail Tang",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=86089485683202",
+    "assetId": "86089485683202",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227559/fishes/fishes/86089485683202.png"
+  },
+  {
+    "id": 114,
+    "name": "Watanabei Angelfish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=133021124365377",
+    "assetId": "133021124365377",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227374/fishes/fishes/133021124365377.png"
+  },
+  {
+    "id": 115,
+    "name": "White Tang",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=138516719984773",
+    "assetId": "138516719984773",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227417/fishes/fishes/138516719984773.png"
+  },
+  {
+    "id": 119,
+    "name": "Ballina Angelfish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=99236757363784",
+    "assetId": "99236757363784",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227664/fishes/fishes/99236757363784.png"
+  },
+  {
+    "id": 121,
+    "name": "Bleekers Damsel",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=116977046936052",
+    "assetId": "116977046936052",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227238/fishes/fishes/116977046936052.png"
+  },
+  {
+    "id": 122,
+    "name": "Loving Shark",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=119173750281399",
+    "assetId": "119173750281399",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227260/fishes/fishes/119173750281399.png"
+  },
+  {
+    "id": 120,
+    "name": "Pink Smith Damsel",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=76606007357699",
+    "assetId": "76606007357699",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227475/fishes/fishes/76606007357699.png"
+  },
+  {
+    "id": 138,
+    "name": "Axolotl",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=76558551981982",
+    "assetId": "76558551981982",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227473/fishes/fishes/76558551981982.png"
+  },
+  {
+    "id": 139,
+    "name": "Silver Tuna",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=84055400571306",
+    "assetId": "84055400571306",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227541/fishes/fishes/84055400571306.png"
+  },
+  {
+    "id": 140,
+    "name": "Pilot Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=114269547366510",
+    "assetId": "114269547366510",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227218/fishes/fishes/114269547366510.png"
+  },
+  {
+    "id": 135,
+    "name": "Patriot Tang",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=118534942671075",
+    "assetId": "118534942671075",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227250/fishes/fishes/118534942671075.png"
+  },
+  {
+    "id": 136,
+    "name": "Frostborn Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=125463067542850",
+    "assetId": "125463067542850",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227309/fishes/fishes/125463067542850.png"
+  },
+  {
+    "id": 137,
+    "name": "Plasma Shark",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=88847410678758",
+    "assetId": "88847410678758",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227583/fishes/fishes/88847410678758.png"
+  },
+  {
+    "id": 143,
+    "name": "Pufferfish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=88950964359044",
+    "assetId": "88950964359044",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227585/fishes/fishes/88950964359044.png"
+  },
+  {
+    "id": 144,
+    "name": "Racoon Butterfly Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=92680808637130",
+    "assetId": "92680808637130",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227621/fishes/fishes/92680808637130.png"
+  },
+  {
+    "id": 142,
+    "name": "Orange Basslet",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=129792505755834",
+    "assetId": "129792505755834",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227348/fishes/fishes/129792505755834.png"
+  },
+  {
+    "id": 146,
+    "name": "Strippled Seahorse",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=120444751052938",
+    "assetId": "120444751052938",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227272/fishes/fishes/120444751052938.png"
+  },
+  {
+    "id": 147,
+    "name": "Thresher Shark",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=70681751795899",
+    "assetId": "70681751795899",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227432/fishes/fishes/70681751795899.png"
+  },
+  {
+    "id": 141,
+    "name": "Great Whale",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=110349456710432",
+    "assetId": "110349456710432",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227175/fishes/fishes/110349456710432.png"
+  },
+  {
+    "id": 163,
+    "name": "Viperfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=132331063285672",
+    "assetId": "132331063285672",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227368/fishes/fishes/132331063285672.png"
+  },
+  {
+    "id": 152,
+    "name": "Deep Sea Crab",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=107492220673765",
+    "assetId": "107492220673765",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227142/fishes/fishes/107492220673765.png"
+  },
+  {
+    "id": 161,
+    "name": "Spotted Lantern Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=121295544969455",
+    "assetId": "121295544969455",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227278/fishes/fishes/121295544969455.png"
+  },
+  {
+    "id": 159,
+    "name": "Robot Kraken",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=80927639907406",
+    "assetId": "80927639907406",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227510/fishes/fishes/80927639907406.png"
+  },
+  {
+    "id": 160,
+    "name": "Monk Fish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=117683281700675",
+    "assetId": "117683281700675",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227246/fishes/fishes/117683281700675.png"
+  },
+  {
+    "id": 158,
+    "name": "King Crab",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=136951139611035",
+    "assetId": "136951139611035",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227411/fishes/fishes/136951139611035.png"
+  },
+  {
+    "id": 157,
+    "name": "Jellyfish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=115477999636961",
+    "assetId": "115477999636961",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227229/fishes/fishes/115477999636961.png"
+  },
+  {
+    "id": 156,
+    "name": "Giant Squid",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=135470649745250",
+    "assetId": "135470649745250",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227396/fishes/fishes/135470649745250.png"
+  },
+  {
+    "id": 155,
+    "name": "Fangtooth",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=82285034746187",
+    "assetId": "82285034746187",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227525/fishes/fishes/82285034746187.png"
+  },
+  {
+    "id": 154,
+    "name": "Electric Eel",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=112551199622795",
+    "assetId": "112551199622795",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227198/fishes/fishes/112551199622795.png"
+  },
+  {
+    "id": 162,
+    "name": "Vampire Squid",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=87203317027314",
+    "assetId": "87203317027314",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227571/fishes/fishes/87203317027314.png"
+  },
+  {
+    "id": 153,
+    "name": "Dark Eel",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=135880333888900",
+    "assetId": "135880333888900",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227398/fishes/fishes/135880333888900.png"
+  },
+  {
+    "id": 151,
+    "name": "Boar Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=114009571858522",
+    "assetId": "114009571858522",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227214/fishes/fishes/114009571858522.png"
+  },
+  {
+    "id": 150,
+    "name": "Blob Fish",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=109329387304752",
+    "assetId": "109329387304752",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227161/fishes/fishes/109329387304752.png"
+  },
+  {
+    "id": 149,
+    "name": "Angler Fish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=95565358831204",
+    "assetId": "95565358831204",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227643/fishes/fishes/95565358831204.png"
+  },
+  {
+    "id": 166,
+    "name": "Dead Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=72777968915255",
+    "assetId": "72777968915255",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227451/fishes/fishes/72777968915255.png"
+  },
+  {
+    "id": 165,
+    "name": "Skeleton Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=110090152643341",
+    "assetId": "110090152643341",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227169/fishes/fishes/110090152643341.png"
+  },
+  {
+    "id": 164,
+    "name": "Swordfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=105539179190905",
+    "assetId": "105539179190905",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227136/fishes/fishes/105539179190905.png"
+  },
+  {
+    "id": 145,
+    "name": "Worm Fish",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=88157067345872",
+    "assetId": "88157067345872",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227575/fishes/fishes/88157067345872.png"
+  },
+  {
+    "id": 189,
+    "name": "Rockfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=88961987133136",
+    "assetId": "88961987133136",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227588/fishes/fishes/88961987133136.png"
+  },
+  {
+    "id": 191,
+    "name": "Sheepshead Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=112711438552296",
+    "assetId": "112711438552296",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227200/fishes/fishes/112711438552296.png"
+  },
+  {
+    "id": 182,
+    "name": "Blackcap Basslet",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=95659897738388",
+    "assetId": "95659897738388",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227645/fishes/fishes/95659897738388.png"
+  },
+  {
+    "id": 183,
+    "name": "Catfish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=98970734819318",
+    "assetId": "98970734819318",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227661/fishes/fishes/98970734819318.png"
+  },
+  {
+    "id": 184,
+    "name": "Coney Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=126049387807805",
+    "assetId": "126049387807805",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227311/fishes/fishes/126049387807805.png"
+  },
+  {
+    "id": 185,
+    "name": "Hermit Crab",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=84444153694943",
+    "assetId": "84444153694943",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227543/fishes/fishes/84444153694943.png"
+  },
+  {
+    "id": 186,
+    "name": "Parrot Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=101895900955177",
+    "assetId": "101895900955177",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227103/fishes/fishes/101895900955177.png"
+  },
+  {
+    "id": 187,
+    "name": "Queen Crab",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=73709080100110",
+    "assetId": "73709080100110",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227459/fishes/fishes/73709080100110.png"
+  },
+  {
+    "id": 188,
+    "name": "Red Snapper",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=70818316245817",
+    "assetId": "70818316245817",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227435/fishes/fishes/70818316245817.png"
+  },
+  {
+    "id": 199,
+    "name": "Lake Sturgeon",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=91608917361161",
+    "assetId": "91608917361161",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227611/fishes/fishes/91608917361161.png"
+  },
+  {
+    "id": 200,
+    "name": "Orca",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=120876783250189",
+    "assetId": "120876783250189",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227277/fishes/fishes/120876783250189.png"
+  },
+  {
+    "id": 194,
+    "name": "Barracuda Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=109111807975453",
+    "assetId": "109111807975453",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227160/fishes/fishes/109111807975453.png"
+  },
+  {
+    "id": 195,
+    "name": "Crystal Crab",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=110188263756245",
+    "assetId": "110188263756245",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227171/fishes/fishes/110188263756245.png"
+  },
+  {
+    "id": 196,
+    "name": "Frog",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=71290852112649",
+    "assetId": "71290852112649",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227437/fishes/fishes/71290852112649.png"
+  },
+  {
+    "id": 197,
+    "name": "Gar Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=116893747982628",
+    "assetId": "116893747982628",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227236/fishes/fishes/116893747982628.png"
+  },
+  {
+    "id": 198,
+    "name": "Herring Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=83087225269219",
+    "assetId": "83087225269219",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227535/fishes/fishes/83087225269219.png"
+  },
+  {
+    "id": 210,
+    "name": "Dark Tentacle",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=82928155035287",
+    "assetId": "82928155035287",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227533/fishes/fishes/82928155035287.png"
+  },
+  {
+    "id": 202,
+    "name": "Flat Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=72446028934813",
+    "assetId": "72446028934813",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227447/fishes/fishes/72446028934813.png"
+  },
+  {
+    "id": 203,
+    "name": "Flying Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=76398271598694",
+    "assetId": "76398271598694",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227471/fishes/fishes/76398271598694.png"
+  },
+  {
+    "id": 204,
+    "name": "Lion Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=92595165502684",
+    "assetId": "92595165502684",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227619/fishes/fishes/92595165502684.png"
+  },
+  {
+    "id": 209,
+    "name": "Starfish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=93878183859150",
+    "assetId": "93878183859150",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227628/fishes/fishes/93878183859150.png"
+  },
+  {
+    "id": 211,
+    "name": "Wahoo",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=88311721896238",
+    "assetId": "88311721896238",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227577/fishes/fishes/88311721896238.png"
+  },
+  {
+    "id": 208,
+    "name": "Saw Fish",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=102132456822726",
+    "assetId": "102132456822726",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227107/fishes/fishes/102132456822726.png"
+  },
+  {
+    "id": 207,
+    "name": "Pink Dolphin",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=86256600614394",
+    "assetId": "86256600614394",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227561/fishes/fishes/86256600614394.png"
+  },
+  {
+    "id": 206,
+    "name": "Monster Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=109551787474599",
+    "assetId": "109551787474599",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227165/fishes/fishes/109551787474599.png"
+  },
+  {
+    "id": 205,
+    "name": "Luminous Fish",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=78374908088019",
+    "assetId": "78374908088019",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227483/fishes/fishes/78374908088019.png"
+  },
+  {
+    "id": 201,
+    "name": "Eerie Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=114252804065144",
+    "assetId": "114252804065144",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227216/fishes/fishes/114252804065144.png"
+  },
+  {
+    "id": 225,
+    "name": "Scare",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=76893887663677",
+    "assetId": "76893887663677",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227479/fishes/fishes/76893887663677.png"
+  },
+  {
+    "id": 224,
+    "name": "Synodontis",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=115468864043768",
+    "assetId": "115468864043768",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227226/fishes/fishes/115468864043768.png"
+  },
+  {
+    "id": 215,
+    "name": "Armor Catfish",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=130020230064983",
+    "assetId": "130020230064983",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227352/fishes/fishes/130020230064983.png"
+  },
+  {
+    "id": 218,
+    "name": "Thin Armor Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=123540389497955",
+    "assetId": "123540389497955",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227296/fishes/fishes/123540389497955.png"
+  },
+  {
+    "id": 227,
+    "name": "Narwhal",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=128440123940426",
+    "assetId": "128440123940426",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227331/fishes/fishes/128440123940426.png"
+  },
+  {
+    "id": 228,
+    "name": "Lochness Monster",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=88964613838360",
+    "assetId": "88964613838360",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227593/fishes/fishes/88964613838360.png"
+  },
+  {
+    "id": 239,
+    "name": "Antique Cup",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=82143322416088",
+    "assetId": "82143322416088",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227522/fishes/fishes/82143322416088.png"
+  },
+  {
+    "id": 238,
+    "name": "Antique Watch",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=93941516308809",
+    "assetId": "93941516308809",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227630/fishes/fishes/93941516308809.png"
+  },
+  {
+    "id": 232,
+    "name": "Sea Shell",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=140728296641493",
+    "assetId": "140728296641493",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227428/fishes/fishes/140728296641493.png"
+  },
+  {
+    "id": 235,
+    "name": "Pearl",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=83797707479837",
+    "assetId": "83797707479837",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227539/fishes/fishes/83797707479837.png"
+  },
+  {
+    "id": 234,
+    "name": "Old Boot",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=128215101057455",
+    "assetId": "128215101057455",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227326/fishes/fishes/128215101057455.png"
+  },
+  {
+    "id": 233,
+    "name": "Expensive Chain",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=110245463690177",
+    "assetId": "110245463690177",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227173/fishes/fishes/110245463690177.png"
+  },
+  {
+    "id": 236,
+    "name": "Diamond Ring",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=110991359455743",
+    "assetId": "110991359455743",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227186/fishes/fishes/110991359455743.png"
+  },
+  {
+    "id": 237,
+    "name": "Conch Shell",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=139285110672806",
+    "assetId": "139285110672806",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227424/fishes/fishes/139285110672806.png"
+  },
+  {
+    "id": 226,
+    "name": "Megalodon",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=126066407227328",
+    "assetId": "126066407227328",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227314/fishes/fishes/126066407227328.png"
+  },
+  {
+    "id": 242,
+    "name": "Arowana",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=81593253309929",
+    "assetId": "81593253309929",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227518/fishes/fishes/81593253309929.png"
+  },
+  {
+    "id": 241,
+    "name": "King Mackerel",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=86941108969730",
+    "assetId": "86941108969730",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227567/fishes/fishes/86941108969730.png"
+  },
+  {
+    "id": 240,
+    "name": "Magma Shark",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=133485972581430",
+    "assetId": "133485972581430",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227380/fishes/fishes/133485972581430.png"
+  },
+  {
+    "id": 243,
+    "name": "Ruby",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=91295888272023",
+    "assetId": "91295888272023",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227607/fishes/fishes/91295888272023.png"
+  },
+  {
+    "id": 280,
+    "name": "Abyshorn Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=79899223576801",
+    "assetId": "79899223576801",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227502/fishes/fishes/79899223576801.png"
+  },
+  {
+    "id": 247,
+    "name": "Sharp One",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=84629313345829",
+    "assetId": "84629313345829",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227546/fishes/fishes/84629313345829.png"
+  },
+  {
+    "id": 249,
+    "name": "Hybodus Shark",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=97369977225977",
+    "assetId": "97369977225977",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227655/fishes/fishes/97369977225977.png"
+  },
+  {
+    "id": 248,
+    "name": "Panther Eel",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=101328665301159",
+    "assetId": "101328665301159",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227101/fishes/fishes/101328665301159.png"
+  },
+  {
+    "id": 83,
+    "name": "Ghost Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=102028503382077",
+    "assetId": "102028503382077",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227105/fishes/fishes/102028503382077.png"
+  },
+  {
+    "id": 176,
+    "name": "Ghost Worm Fish",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=107896897205452",
+    "assetId": "107896897205452",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227147/fishes/fishes/107896897205452.png"
+  },
+  {
+    "id": 287,
+    "name": "Zebra Snakehead",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=122319387402990",
+    "assetId": "122319387402990",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227286/fishes/fishes/122319387402990.png"
+  },
+  {
+    "id": 281,
+    "name": "Waveback Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=96051341080933",
+    "assetId": "96051341080933",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227647/fishes/fishes/96051341080933.png"
+  },
+  {
+    "id": 263,
+    "name": "Crocodile",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=89886287478220",
+    "assetId": "89886287478220",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227600/fishes/fishes/89886287478220.png"
+  },
+  {
+    "id": 278,
+    "name": "Viperangler Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=134552782408906",
+    "assetId": "134552782408906",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227388/fishes/fishes/134552782408906.png"
+  },
+  {
+    "id": 286,
+    "name": "Temple Spokes Tuna",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=85353973924965",
+    "assetId": "85353973924965",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227551/fishes/fishes/85353973924965.png"
+  },
+  {
+    "id": 276,
+    "name": "Spear Guardian",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=98723587624430",
+    "assetId": "98723587624430",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227659/fishes/fishes/98723587624430.png"
+  },
+  {
+    "id": 268,
+    "name": "Skeleton Angler Fish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=72285613528111",
+    "assetId": "72285613528111",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227445/fishes/fishes/72285613528111.png"
+  },
+  {
+    "id": 275,
+    "name": "Sail Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=86952015220017",
+    "assetId": "86952015220017",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227569/fishes/fishes/86952015220017.png"
+  },
+  {
+    "id": 283,
+    "name": "Sacred Guardian Squid",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=129358445149074",
+    "assetId": "129358445149074",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227342/fishes/fishes/129358445149074.png"
+  },
+  {
+    "id": 279,
+    "name": "Runic Wispeye",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=97194596437636",
+    "assetId": "97194596437636",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227653/fishes/fishes/97194596437636.png"
+  },
+  {
+    "id": 285,
+    "name": "Red Goatfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=87364367503847",
+    "assetId": "87364367503847",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227573/fishes/fishes/87364367503847.png"
+  },
+  {
+    "id": 282,
+    "name": "Parrot Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=90145730610071",
+    "assetId": "90145730610071",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227602/fishes/fishes/90145730610071.png"
+  },
+  {
+    "id": 277,
+    "name": "Mossy Fishlet",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=138560606706748",
+    "assetId": "138560606706748",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227419/fishes/fishes/138560606706748.png"
+  },
+  {
+    "id": 262,
+    "name": "Ancient Arapaima",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=83287284251523",
+    "assetId": "83287284251523",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227537/fishes/fishes/83287284251523.png"
+  },
+  {
+    "id": 274,
+    "name": "Manoai Statue Fish",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=112056031966357",
+    "assetId": "112056031966357",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227193/fishes/fishes/112056031966357.png"
+  },
+  {
+    "id": 273,
+    "name": "Mammoth Appafish",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=113683047681103",
+    "assetId": "113683047681103",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227207/fishes/fishes/113683047681103.png"
+  },
+  {
+    "id": 270,
+    "name": "Goliath Tiger",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=79451780989889",
+    "assetId": "79451780989889",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227493/fishes/fishes/79451780989889.png"
+  },
+  {
+    "id": 284,
+    "name": "Freshwater Piranha",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=133381366802339",
+    "assetId": "133381366802339",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227378/fishes/fishes/133381366802339.png"
+  },
+  {
+    "id": 288,
+    "name": "Drippy Tucanare",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=88963984435830",
+    "assetId": "88963984435830",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227590/fishes/fishes/88963984435830.png"
+  },
+  {
+    "id": 292,
+    "name": "King Jelly",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=104757933481327",
+    "assetId": "104757933481327",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227122/fishes/fishes/104757933481327.png"
+  },
+  {
+    "id": 290,
+    "name": "Beanie Leedsicheye",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=85346893566616",
+    "assetId": "85346893566616",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227550/fishes/fishes/85346893566616.png"
+  },
+  {
+    "id": 264,
+    "name": "Ancient Relic Crocodile",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=131025252592514",
+    "assetId": "131025252592514",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227362/fishes/fishes/131025252592514.png"
+  },
+  {
+    "id": 293,
+    "name": "Bone Whale",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=99804145194043",
+    "assetId": "99804145194043",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227670/fishes/fishes/99804145194043.png"
+  },
+  {
+    "id": 272,
+    "name": "Mosasaur Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=119021943786069",
+    "assetId": "119021943786069",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227258/fishes/fishes/119021943786069.png"
+  },
+  {
+    "id": 269,
+    "name": "Elshark Gran Maja",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=115522161459382",
+    "assetId": "115522161459382",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227231/fishes/fishes/115522161459382.png"
+  },
+  {
+    "id": 289,
+    "name": "Water Snake",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=118434158055629",
+    "assetId": "118434158055629",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227248/fishes/fishes/118434158055629.png"
+  },
+  {
+    "id": 295,
+    "name": "Ancient Whale",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=106712272327597",
+    "assetId": "106712272327597",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227138/fishes/fishes/106712272327597.png"
+  },
+  {
+    "id": 296,
+    "name": "Crystal Salamander",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=129118256536866",
+    "assetId": "129118256536866",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227340/fishes/fishes/129118256536866.png"
+  },
+  {
+    "id": 301,
+    "name": "Dead Scary Clownfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=130326949380133",
+    "assetId": "130326949380133",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227354/fishes/fishes/130326949380133.png"
+  },
+  {
+    "id": 303,
+    "name": "Dead Spooky Koi Fish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=94754294966347",
+    "assetId": "94754294966347",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227639/fishes/fishes/94754294966347.png"
+  },
+  {
+    "id": 302,
+    "name": "Dead Zombie Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=74502211632455",
+    "assetId": "74502211632455",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227463/fishes/fishes/74502211632455.png"
+  },
+  {
+    "id": 299,
+    "name": "Pumpkin Jellyfish",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=110367503006917",
+    "assetId": "110367503006917",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227178/fishes/fishes/110367503006917.png"
+  },
+  {
+    "id": 300,
+    "name": "Scary Clownfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=118734586270295",
+    "assetId": "118734586270295",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227254/fishes/fishes/118734586270295.png"
+  },
+  {
+    "id": 298,
+    "name": "Spooky Koi Fish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=71760590403389",
+    "assetId": "71760590403389",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227440/fishes/fishes/71760590403389.png"
+  },
+  {
+    "id": 304,
+    "name": "Toxic Jellyfish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=128554473363426",
+    "assetId": "128554473363426",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227333/fishes/fishes/128554473363426.png"
+  },
+  {
+    "id": 297,
+    "name": "Zombie Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=118840558184490",
+    "assetId": "118840558184490",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227256/fishes/fishes/118840558184490.png"
+  },
+  {
+    "id": 310,
+    "name": "Baby Pumpkin Shark",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=92277291116292",
+    "assetId": "92277291116292",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227615/fishes/fishes/92277291116292.png"
+  },
+  {
+    "id": 316,
+    "name": "Dark Pumpkin Appafish",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=128070497580785",
+    "assetId": "128070497580785",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227322/fishes/fishes/128070497580785.png"
+  },
+  {
+    "id": 308,
+    "name": "Frankenstein Longsnapper",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=82325364028304",
+    "assetId": "82325364028304",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227526/fishes/fishes/82325364028304.png"
+  },
+  {
+    "id": 313,
+    "name": "Ghost Spiralfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=131024392032651",
+    "assetId": "131024392032651",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227360/fishes/fishes/131024392032651.png"
+  },
+  {
+    "id": 315,
+    "name": "Mossy Vampire Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=123289074389407",
+    "assetId": "123289074389407",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227294/fishes/fishes/123289074389407.png"
+  },
+  {
+    "id": 309,
+    "name": "Pumpkin Angler Fish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=123751784377518",
+    "assetId": "123751784377518",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227298/fishes/fishes/123751784377518.png"
+  },
+  {
+    "id": 312,
+    "name": "Pumpkin Butterfly Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=129107539280642",
+    "assetId": "129107539280642",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227338/fishes/fishes/129107539280642.png"
+  },
+  {
+    "id": 307,
+    "name": "Pumpkin Carved Shark",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=112304908829218",
+    "assetId": "112304908829218",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227195/fishes/fishes/112304908829218.png"
+  },
+  {
+    "id": 305,
+    "name": "Pumpkin Hermit Crab",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=128748768092216",
+    "assetId": "128748768092216",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227335/fishes/fishes/128748768092216.png"
+  },
+  {
+    "id": 314,
+    "name": "Pumpkin Ray",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=103346973064613",
+    "assetId": "103346973064613",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227116/fishes/fishes/103346973064613.png"
+  },
+  {
+    "id": 317,
+    "name": "Pumpkin StoneTurtle",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=119502983826514",
+    "assetId": "119502983826514",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227264/fishes/fishes/119502983826514.png"
+  },
+  {
+    "id": 318,
+    "name": "Spooky Peafish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=126789494167977",
+    "assetId": "126789494167977",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227316/fishes/fishes/126789494167977.png"
+  },
+  {
+    "id": 306,
+    "name": "Witch Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=72770544702627",
+    "assetId": "72770544702627",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227449/fishes/fishes/72770544702627.png"
+  },
+  {
+    "id": 311,
+    "name": "Wizard Stingray",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=102291521716919",
+    "assetId": "102291521716919",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227109/fishes/fishes/102291521716919.png"
+  },
+  {
+    "id": 319,
+    "name": "Zombie Megalodon",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=110861329686146",
+    "assetId": "110861329686146",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227184/fishes/fishes/110861329686146.png"
+  },
+  {
+    "id": 333,
+    "name": "Candy Corn Eel",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=93259170550129",
+    "assetId": "93259170550129",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227623/fishes/fishes/93259170550129.png"
+  },
+  {
+    "id": 334,
+    "name": "Ghastly Crab",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=76282468756263",
+    "assetId": "76282468756263",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227469/fishes/fishes/76282468756263.png"
+  },
+  {
+    "id": 338,
+    "name": "Ghastly Hermit Crab",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=137125780150376",
+    "assetId": "137125780150376",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227413/fishes/fishes/137125780150376.png"
+  },
+  {
+    "id": 336,
+    "name": "Hammerhead Mummy",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=115062339542534",
+    "assetId": "115062339542534",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227222/fishes/fishes/115062339542534.png"
+  },
+  {
+    "id": 342,
+    "name": "Bloodmoon Whale",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=113886190969614",
+    "assetId": "113886190969614",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227210/fishes/fishes/113886190969614.png"
+  },
+  {
+    "id": 341,
+    "name": "Talon Serpent",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=108665275325646",
+    "assetId": "108665275325646",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227153/fishes/fishes/108665275325646.png"
+  },
+  {
+    "id": 340,
+    "name": "Wild Serpent",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=105102846577855",
+    "assetId": "105102846577855",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227129/fishes/fishes/105102846577855.png"
+  },
+  {
+    "id": 335,
+    "name": "Witch Koi Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=121441191255890",
+    "assetId": "121441191255890",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227281/fishes/fishes/121441191255890.png"
+  },
+  {
+    "id": 337,
+    "name": "Wraithfin Abyssal",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=127594101212560",
+    "assetId": "127594101212560",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227318/fishes/fishes/127594101212560.png"
+  },
+  {
+    "id": 339,
+    "name": "Skeleton Narwhal",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=72248976760148",
+    "assetId": "72248976760148",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227443/fishes/fishes/72248976760148.png"
+  },
+  {
+    "id": 378,
+    "name": "Wing Parrotfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=124783376175888",
+    "assetId": "124783376175888",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227301/fishes/fishes/124783376175888.png"
+  },
+  {
+    "id": 377,
+    "name": "Traffic Cone Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=113998108351187",
+    "assetId": "113998108351187",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227212/fishes/fishes/113998108351187.png"
+  },
+  {
+    "id": 376,
+    "name": "Toothy Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=136937049057582",
+    "assetId": "136937049057582",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227409/fishes/fishes/136937049057582.png"
+  },
+  {
+    "id": 375,
+    "name": "Thinkler Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=109016567709360",
+    "assetId": "109016567709360",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227157/fishes/fishes/109016567709360.png"
+  },
+  {
+    "id": 374,
+    "name": "Sona Fin Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=123007215107239",
+    "assetId": "123007215107239",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227292/fishes/fishes/123007215107239.png"
+  },
+  {
+    "id": 373,
+    "name": "Sea Crustacean",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=115338077693444",
+    "assetId": "115338077693444",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227224/fishes/fishes/115338077693444.png"
+  },
+  {
+    "id": 372,
+    "name": "Runic Squid",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=76096764311236",
+    "assetId": "76096764311236",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227467/fishes/fishes/76096764311236.png"
+  },
+  {
+    "id": 371,
+    "name": "Runic Sea Crustacean",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=78787372617743",
+    "assetId": "78787372617743",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227489/fishes/fishes/78787372617743.png"
+  },
+  {
+    "id": 370,
+    "name": "Runic Lobster",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=75142053727355",
+    "assetId": "75142053727355",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227465/fishes/fishes/75142053727355.png"
+  },
+  {
+    "id": 369,
+    "name": "Runic Axolotl",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=77334109072314",
+    "assetId": "77334109072314",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227481/fishes/fishes/77334109072314.png"
+  },
+  {
+    "id": 368,
+    "name": "Purp Blisfish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=119189756405143",
+    "assetId": "119189756405143",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227262/fishes/fishes/119189756405143.png"
+  },
+  {
+    "id": 367,
+    "name": "Primordial Octopus",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=102375471622278",
+    "assetId": "102375471622278",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227112/fishes/fishes/102375471622278.png"
+  },
+  {
+    "id": 366,
+    "name": "Primal Lobster",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=134352063604414",
+    "assetId": "134352063604414",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227382/fishes/fishes/134352063604414.png"
+  },
+  {
+    "id": 365,
+    "name": "Primal Axolotl",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=127892490832450",
+    "assetId": "127892490832450",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227320/fishes/fishes/127892490832450.png"
+  },
+  {
+    "id": 364,
+    "name": "Pirate Blue Lobster",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=136311954875874",
+    "assetId": "136311954875874",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227401/fishes/fishes/136311954875874.png"
+  },
+  {
+    "id": 363,
+    "name": "Night Glider Fish",
+    "tier": 1,
+    "url": "https://www.roblox.com/asset/?id=93808950497100",
+    "assetId": "93808950497100",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227626/fishes/fishes/93808950497100.png"
+  },
+  {
+    "id": 362,
+    "name": "Lunar Crescent Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=100769354091343",
+    "assetId": "100769354091343",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227097/fishes/fishes/100769354091343.png"
+  },
+  {
+    "id": 361,
+    "name": "Liar Nose Fish",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=122543032863960",
+    "assetId": "122543032863960",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227288/fishes/fishes/122543032863960.png"
+  },
+  {
+    "id": 360,
+    "name": "King Frog",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=107539230294032",
+    "assetId": "107539230294032",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227144/fishes/fishes/107539230294032.png"
+  },
+  {
+    "id": 359,
+    "name": "Gladiator Shark",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=131785277053113",
+    "assetId": "131785277053113",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227366/fishes/fishes/131785277053113.png"
+  },
+  {
+    "id": 358,
+    "name": "Foxtrot Koanfish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=115020830553781",
+    "assetId": "115020830553781",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227220/fishes/fishes/115020830553781.png"
+  },
+  {
+    "id": 357,
+    "name": "Fossilized Shark",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=95113752323029",
+    "assetId": "95113752323029",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227641/fishes/fishes/95113752323029.png"
+  },
+  {
+    "id": 356,
+    "name": "Flying Manta",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=89252022082531",
+    "assetId": "89252022082531",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227595/fishes/fishes/89252022082531.png"
+  },
+  {
+    "id": 355,
+    "name": "Flatheaded Whale Shark",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=73809550216371",
+    "assetId": "73809550216371",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227461/fishes/fishes/73809550216371.png"
+  },
+  {
+    "id": 354,
+    "name": "Doober Fish",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=104826665812171",
+    "assetId": "104826665812171",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227125/fishes/fishes/104826665812171.png"
+  },
+  {
+    "id": 353,
+    "name": "Dogfish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=124798847622372",
+    "assetId": "124798847622372",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227303/fishes/fishes/124798847622372.png"
+  },
+  {
+    "id": 352,
+    "name": "Cavern Dweller",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=110427632040144",
+    "assetId": "110427632040144",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227180/fishes/fishes/110427632040144.png"
+  },
+  {
+    "id": 351,
+    "name": "Boney Eel",
+    "tier": 3,
+    "url": "https://www.roblox.com/asset/?id=85394749821305",
+    "assetId": "85394749821305",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227554/fishes/fishes/85394749821305.png"
+  },
+  {
+    "id": 350,
+    "name": "Blobby Shieldfish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=78472043782085",
+    "assetId": "78472043782085",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227485/fishes/fishes/78472043782085.png"
+  },
+  {
+    "id": 349,
+    "name": "Baby Shrimp",
+    "tier": 2,
+    "url": "https://www.roblox.com/asset/?id=100664684321181",
+    "assetId": "100664684321181",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227095/fishes/fishes/100664684321181.png"
+  },
+  {
+    "id": 348,
+    "name": "Angrylion Fish",
+    "tier": 4,
+    "url": "https://www.roblox.com/asset/?id=135099762730215",
+    "assetId": "135099762730215",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227390/fishes/fishes/135099762730215.png"
+  },
+  {
+    "id": 347,
+    "name": "Ancient Squid",
+    "tier": 6,
+    "url": "https://www.roblox.com/asset/?id=103962641004338",
+    "assetId": "103962641004338",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227118/fishes/fishes/103962641004338.png"
+  },
+  {
+    "id": 346,
+    "name": "Ancient Pufferfish",
+    "tier": 5,
+    "url": "https://www.roblox.com/asset/?id=94080226439959",
+    "assetId": "94080226439959",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227632/fishes/fishes/94080226439959.png"
+  },
+  {
+    "id": 345,
+    "name": "Ancient Lochness Monster",
+    "tier": 7,
+    "url": "https://www.roblox.com/asset/?id=122849883484708",
+    "assetId": "122849883484708",
+    "imageUrl": "https://res.cloudinary.com/dscfd90ib/image/upload/v1763227290/fishes/fishes/122849883484708.png"
+  }
+]
