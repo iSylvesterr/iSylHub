@@ -358,7 +358,7 @@ function iSylHub:MakeNotify(NotifyConfig)
         DropShadowHolder.Parent = NotifyFrameReal
 
         local NotifIcon = Instance.new("ImageLabel")
-        NotifIcon.Image = "rbxassetid://127299394628001" .. NotifyConfig.Icon
+        NotifIcon.Image = "rbxassetid://" .. NotifyConfig.Icon
         NotifIcon.BackgroundTransparency = 1
         NotifIcon.ImageTransparency = 0
         NotifIcon.BorderSizePixel = 0
