@@ -66,9 +66,9 @@ local THEME = {
     AccentBright = Color3.fromRGB(220, 50, 70),    -- merah terang untuk hover
     AccentDim    = Color3.fromRGB(120, 15, 30),    -- merah sangat gelap
     BgDark       = Color3.fromRGB(10, 10, 12),     -- background utama
-    BgMid        = Color3.fromRGB(18, 18, 22),     -- background panel
-    BgLight      = Color3.fromRGB(28, 28, 34),     -- background element
-    BgElement    = Color3.fromRGB(22, 22, 28),     -- element sedikit terang
+    BgMid        = Color3.fromRGB(18, 18, 22),     -- background panel / tab bar
+    BgLight      = Color3.fromRGB(26, 26, 32),     -- background section
+    BgElement    = Color3.fromRGB(26, 26, 32),     -- item menyatu dgn section
     Text         = Color3.fromRGB(235, 235, 235),  -- teks utama
     TextDim      = Color3.fromRGB(150, 150, 155),  -- teks sekunder
     Separator    = Color3.fromRGB(180, 30, 50),    -- garis merah
@@ -478,6 +478,14 @@ function iSylHub:Window(GuiConfig)
     Main.Name = "Main"
     Main.Parent = DropShadow
 
+    -- Outline/border merah di sekeliling window
+    local MainStroke = Instance.new("UIStroke")
+    MainStroke.Color = THEME.Accent
+    MainStroke.Thickness = 1.5
+    MainStroke.Transparency = 0.3
+    MainStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    MainStroke.Parent = Main
+
     -- Red left border accent (seperti screenshot referensi)
     local LeftBorder = Instance.new("Frame")
     LeftBorder.Name = "LeftBorder"
@@ -649,7 +657,8 @@ function iSylHub:Window(GuiConfig)
     -- CONTENT AREA (kanan)
     -- =============================================
     local Layers = Instance.new("Frame")
-    Layers.BackgroundTransparency = 1
+    Layers.BackgroundColor3 = THEME.BgDark
+    Layers.BackgroundTransparency = 0
     Layers.BorderSizePixel = 0
     Layers.Position = UDim2.new(0, GuiConfig["Tab Width"] + 1, 0, 39)
     Layers.Size = UDim2.new(1, -(GuiConfig["Tab Width"] + 1), 1, -39)
@@ -1386,6 +1395,12 @@ function iSylHub:Window(GuiConfig)
                 Paragraph.Name = "Paragraph"
                 Paragraph.Parent = SectionAdd
                 Instance.new("UICorner", Paragraph).CornerRadius = UDim.new(0, 5)
+                local _s = Instance.new("UIStroke")
+                _s.Color = Color3.fromRGB(255,255,255)
+                _s.Thickness = 1
+                _s.Transparency = 0.92
+                _s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                _s.Parent = Paragraph
 
                 local iconOffset = 10
                 if ParagraphConfig.Icon then
@@ -1488,6 +1503,12 @@ function iSylHub:Window(GuiConfig)
                 Panel.LayoutOrder = CountItem
                 Panel.Parent = SectionAdd
                 Instance.new("UICorner", Panel).CornerRadius = UDim.new(0, 5)
+                local _s = Instance.new("UIStroke")
+                _s.Color = Color3.fromRGB(255,255,255)
+                _s.Thickness = 1
+                _s.Transparency = 0.92
+                _s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                _s.Parent = Panel
 
                 local Title = Instance.new("TextLabel")
                 Title.Font = Enum.Font.GothamBold
@@ -1607,6 +1628,12 @@ function iSylHub:Window(GuiConfig)
                 Button.LayoutOrder = CountItem
                 Button.Parent = SectionAdd
                 Instance.new("UICorner", Button).CornerRadius = UDim.new(0, 5)
+                local _s = Instance.new("UIStroke")
+                _s.Color = Color3.fromRGB(255,255,255)
+                _s.Thickness = 1
+                _s.Transparency = 0.92
+                _s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                _s.Parent = Button
 
                 local MainButton = Instance.new("TextButton")
                 MainButton.Font = Enum.Font.GothamBold
@@ -1679,6 +1706,12 @@ function iSylHub:Window(GuiConfig)
                 Toggle.Name = "Toggle"
                 Toggle.Parent = SectionAdd
                 Instance.new("UICorner", Toggle).CornerRadius = UDim.new(0, 5)
+                local _s = Instance.new("UIStroke")
+                _s.Color = Color3.fromRGB(255,255,255)
+                _s.Thickness = 1
+                _s.Transparency = 0.92
+                _s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                _s.Parent = Toggle
 
                 local ToggleTitle = Instance.new("TextLabel")
                 ToggleTitle.Font = Enum.Font.GothamBold
@@ -1819,6 +1852,12 @@ function iSylHub:Window(GuiConfig)
                 Slider.Name = "Slider"
                 Slider.Parent = SectionAdd
                 Instance.new("UICorner", Slider).CornerRadius = UDim.new(0, 5)
+                local _s = Instance.new("UIStroke")
+                _s.Color = Color3.fromRGB(255,255,255)
+                _s.Thickness = 1
+                _s.Transparency = 0.92
+                _s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                _s.Parent = Slider
 
                 local SliderTitle = Instance.new("TextLabel")
                 SliderTitle.Font = Enum.Font.GothamBold
@@ -1969,6 +2008,12 @@ function iSylHub:Window(GuiConfig)
                 Input.Name = "Input"
                 Input.Parent = SectionAdd
                 Instance.new("UICorner", Input).CornerRadius = UDim.new(0, 5)
+                local _s = Instance.new("UIStroke")
+                _s.Color = Color3.fromRGB(255,255,255)
+                _s.Thickness = 1
+                _s.Transparency = 0.92
+                _s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                _s.Parent = Input
 
                 local InputTitle = Instance.new("TextLabel")
                 InputTitle.Font = Enum.Font.GothamBold
@@ -2079,6 +2124,12 @@ function iSylHub:Window(GuiConfig)
                 Dropdown.Name = "Dropdown"
                 Dropdown.Parent = SectionAdd
                 Instance.new("UICorner", Dropdown).CornerRadius = UDim.new(0, 5)
+                local _s = Instance.new("UIStroke")
+                _s.Color = Color3.fromRGB(255,255,255)
+                _s.Thickness = 1
+                _s.Transparency = 0.92
+                _s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                _s.Parent = Dropdown
 
                 local DropdownButton = Instance.new("TextButton")
                 DropdownButton.Text = ""
