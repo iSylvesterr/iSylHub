@@ -489,6 +489,7 @@ function iSylHub:Window(GuiConfig)
     GuiConfig.Title        = GuiConfig.Title or "iSylHub"
     GuiConfig.Footer       = GuiConfig.Footer or "iSylHub"
     GuiConfig.Color        = GuiConfig.Color or Color3.fromRGB(185, 28, 48)
+    GuiConfig.Color2 = GuiConfig.Color2 or Color3.fromRGB(130, 130, 140)
     GuiConfig["Tab Width"] = GuiConfig["Tab Width"] or 120
     GuiConfig.Version      = GuiConfig.Version or 1
 
@@ -621,7 +622,7 @@ function iSylHub:Window(GuiConfig)
 
     TextLabel1.Font = Enum.Font.GothamBold
     TextLabel1.Text = "| " .. GuiConfig.Footer
-    TextLabel1.TextColor3 = GuiConfig.Color2
+    TextLabel1.TextColor3 = GuiConfig.Color2 or Color3.fromRGB(130, 130, 140)
     TextLabel1.TextSize = 14
     TextLabel1.TextXAlignment = Enum.TextXAlignment.Left
     TextLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
