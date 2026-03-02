@@ -726,7 +726,7 @@ function iSylHub:Window(GuiConfig)
     LayersReal.BorderSizePixel = 0
     LayersReal.ClipsDescendants = true
     LayersReal.Position = UDim2.new(0, 0, 1, 0)
-    LayersReal.Size = UDim2.new(1, 0, 1, -33)
+    LayersReal.Size = UDim2.new(1, 0, 1, 0)
     LayersReal.Name = "LayersReal"
     LayersReal.Parent = Layers
 
