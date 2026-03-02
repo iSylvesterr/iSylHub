@@ -1,17 +1,17 @@
 local HttpService = game:GetService("HttpService")
 
-if not isfolder("Meng Hub") then
-    makefolder("Meng Hub")
+if not isfolder("iSylHub") then
+    makefolder("iSylHub")
 end
-if not isfolder("Meng Hub/Config") then
-    makefolder("Meng Hub/Config")
+if not isfolder("iSylHub/Config") then
+    makefolder("iSylHub/Config")
 end
 
 local gameName   = tostring(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 gameName         = gameName:gsub("[^%w_ ]", "")
 gameName         = gameName:gsub("%s+", "_")
 
-local ConfigFile = "Meng Hub/Config/MengHub_" .. gameName .. ".json"
+local ConfigFile = "iSylHub/Config/iSylHub_" .. gameName .. ".json"
 
 ConfigData       = {}
 Elements         = {}
@@ -56,7 +56,7 @@ local Icons = {
     player    = "rbxassetid://12120698352",
     web       = "rbxassetid://137601480983962",
     bag       = "rbxassetid://8601111810",
-    shop      = "rbxassetid://4985385964",
+    shop      = "rbxassetid://10734952479",
     cart      = "rbxassetid://128874923961846",
     plug      = "rbxassetid://137601480983962",
     settings  = "rbxassetid://70386228443175",
@@ -87,7 +87,16 @@ local Icons = {
     next      = "rbxassetid://12662718374",
     rod       = "rbxassetid://103247953194129",
     fish      = "rbxassetid://97167558235554",
-    enviicon  = "rbxassetid://101669656973003",
+    isylicon  = "rbxassetid://101669656973003",
+    info          = "rbxassetid://10723415903",
+    main          = "rbxassetid://10723407389",
+    auto          = "rbxassetid://10734923214",
+    teleport      = "rbxassetid://10734886004",
+    event         = "rbxassetid://10709789505",
+    webhook       = "rbxassetid://10709775560",
+    peformance    = "rbxassetid://10734963400",
+    misc          = "rbxassetid://10734972862",
+    config        = "rbxassetid://10734950309",
 }
 
 local UserInputService = game:GetService("UserInputService")
@@ -261,10 +270,10 @@ function CircleClick(Button, X, Y)
     end)
 end
 
-local Menghub = {}
-function Menghub:MakeNotify(NotifyConfig)
+local iSylHub = {}
+function iSylHub:MakeNotify(NotifyConfig)
     local NotifyConfig = NotifyConfig or {}
-    NotifyConfig.Title = NotifyConfig.Title or "Meng Hub"
+    NotifyConfig.Title = NotifyConfig.Title or "iSylHub"
     NotifyConfig.Description = NotifyConfig.Description or "Notification"
     NotifyConfig.Content = NotifyConfig.Content or "Content"
     NotifyConfig.Icon = NotifyConfig.Icon or "93732999692312"
@@ -475,8 +484,8 @@ function Menghub:MakeNotify(NotifyConfig)
 end
 
 function notif(msg, delay, color, title, desc)
-    return Menghub:MakeNotify({
-        Title = title or "Meng Hub",
+    return iSylHub:MakeNotify({
+        Title = title or "iSylHub",
         Description = desc or "Notification",
         Content = msg or "Content",
         Color = color or Color3.fromRGB(185, 28, 48),
@@ -484,10 +493,10 @@ function notif(msg, delay, color, title, desc)
     })
 end
 
-function Menghub:Window(GuiConfig)
+function iSylHub:Window(GuiConfig)
     GuiConfig              = GuiConfig or {}
-    GuiConfig.Title        = GuiConfig.Title or "Meng Hub"
-    GuiConfig.Footer       = GuiConfig.Footer or "MengHub >:D"
+    GuiConfig.Title        = GuiConfig.Title or "iSylHub"
+    GuiConfig.Footer       = GuiConfig.Footer or "iSylHub"
     GuiConfig.Color        = GuiConfig.Color or Color3.fromRGB(185, 28, 48)
     GuiConfig.Color2       = GuiConfig.Color2 or Color3.fromRGB(120, 120, 130)
     GuiConfig["Tab Width"] = GuiConfig["Tab Width"] or 120
@@ -498,7 +507,7 @@ function Menghub:Window(GuiConfig)
 
     local GuiFunc = {}
 
-    local Menghubb = Instance.new("ScreenGui");
+    local iSylHubb = Instance.new("ScreenGui");
     local DropShadowHolder = Instance.new("Frame");
     local DropShadow = Instance.new("ImageLabel");
     local Main = Instance.new("Frame");
@@ -512,7 +521,6 @@ function Menghub:Window(GuiConfig)
     local Min = Instance.new("TextButton");
     local ImageLabel2 = Instance.new("ImageLabel");
     local LayersTab = Instance.new("Frame");
-    local AccountTab = Instance.new("Frame");
     local UICorner2 = Instance.new("UICorner");
     local DecideFrame = Instance.new("Frame");
     local Layers = Instance.new("Frame");
@@ -522,10 +530,10 @@ function Menghub:Window(GuiConfig)
     local LayersFolder = Instance.new("Folder");
     local LayersPageLayout = Instance.new("UIPageLayout");
 
-    Menghubb.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    Menghubb.Name = "Menghubb"
-    Menghubb.ResetOnSpawn = false
-    Menghubb.Parent = game:GetService("CoreGui")
+    iSylHubb.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    iSylHubb.Name = "iSylHubb"
+    iSylHubb.ResetOnSpawn = false
+    iSylHubb.Parent = game:GetService("CoreGui")
 
     DropShadowHolder.BackgroundTransparency = 1
 	--DropShadowHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -539,10 +547,10 @@ function Menghub:Window(GuiConfig)
     end
     DropShadowHolder.ZIndex = 0
     DropShadowHolder.Name = "DropShadowHolder"
-    DropShadowHolder.Parent = Menghubb
+    DropShadowHolder.Parent = iSylHubb
 
-    DropShadowHolder.Position = UDim2.new(0, (Menghubb.AbsoluteSize.X // 2 - DropShadowHolder.Size.X.Offset // 2), 0,
-        (Menghubb.AbsoluteSize.Y // 2 - DropShadowHolder.Size.Y.Offset // 2))
+    DropShadowHolder.Position = UDim2.new(0, (iSylHubb.AbsoluteSize.X // 2 - DropShadowHolder.Size.X.Offset // 2), 0,
+        (iSylHubb.AbsoluteSize.Y // 2 - DropShadowHolder.Size.Y.Offset // 2))
     DropShadow.Image = "rbxassetid://6015897843"
     DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
     DropShadow.ImageTransparency = 0.1
@@ -683,63 +691,6 @@ function Menghub:Window(GuiConfig)
     LayersTab.Name = "LayersTab"
     LayersTab.Parent = Main
 
-	AccountTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    AccountTab.BackgroundTransparency = 0.9350000023841858
-    AccountTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    AccountTab.BorderSizePixel = 0
-    AccountTab.Position = UDim2.new(0, 9, 1, -45)
-    AccountTab.Size = UDim2.new(0, GuiConfig["Tab Width"], 0, 35)
-    AccountTab.Name = "AccountTab"
-    AccountTab.Parent = Main
-
-    UICorner.CornerRadius = UDim.new(0, 6)
-    UICorner.Parent = AccountTab
-
-    local AvatarCircle = Instance.new("Frame")
-    AvatarCircle.Size = UDim2.new(0, 26, 0, 26)
-    AvatarCircle.Position = UDim2.new(0, 5, 0.5, -13)
-    AvatarCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    AvatarCircle.BackgroundTransparency = 1
-    AvatarCircle.BorderSizePixel = 0
-    AvatarCircle.ClipsDescendants = true  -- bikin bulat
-    AvatarCircle.Name = "AvatarCircle"
-    AvatarCircle.Parent = AccountTab
-
-    local AvatarCorner = Instance.new("UICorner")
-    AvatarCorner.CornerRadius = UDim.new(1, 0)  -- full bulat
-    AvatarCorner.Parent = AvatarCircle
-
-    local AvatarImg = Instance.new("ImageLabel")
-    AvatarImg.Size = UDim2.new(1, 0, 1, 0)
-    AvatarImg.BackgroundTransparency = 1
-    AvatarImg.BorderSizePixel = 0
-    AvatarImg.Name = "AvatarImg"
-    AvatarImg.Parent = AvatarCircle
-
-    -- Nama player di sebelah kanan avatar
-    local AccountName = Instance.new("TextLabel")
-    AccountName.Font = Enum.Font.GothamBold
-    AccountName.Text = game:GetService("Players").LocalPlayer.Name
-    AccountName.TextSize = 11
-    AccountName.TextColor3 = Color3.fromRGB(231, 231, 231)
-    AccountName.TextXAlignment = Enum.TextXAlignment.Left
-    AccountName.BackgroundTransparency = 1
-    AccountName.Position = UDim2.new(0, 36, 0, 0)
-    AccountName.Size = UDim2.new(1, -40, 1, 0)
-    AccountName.TextTruncate = Enum.TextTruncate.AtEnd  -- potong kalau kepanjangan
-    AccountName.Parent = AccountTab
-
-    -- Ambil foto avatar
-    local Players = game:GetService("Players")
-    local LocalPlayer = Players.LocalPlayer
-    spawn(function()
-        local url, _ = Players:GetUserThumbnailAsync(
-            LocalPlayer.UserId,
-            Enum.ThumbnailType.HeadShot,
-            Enum.ThumbnailSize.Size420x420
-        )
-        AvatarImg.Image = url
-    end)
 
     UICorner2.CornerRadius = UDim.new(0, 2)
     UICorner2.Parent = LayersTab
@@ -835,8 +786,8 @@ function Menghub:Window(GuiConfig)
     ScrollTab.ChildRemoved:Connect(UpdateSize1)
 
     function GuiFunc:DestroyGui()
-        if CoreGui:FindFirstChild("Menghubb") then
-            Menghubb:Destroy()
+        if CoreGui:FindFirstChild("iSylHubb") then
+            iSylHubb:Destroy()
         end
     end
 
@@ -942,7 +893,7 @@ function Menghub:Window(GuiConfig)
         Instance.new("UICorner", Cancel).CornerRadius = UDim.new(0, 6)
 
         Yes.MouseButton1Click:Connect(function()
-            if Menghubb then Menghubb:Destroy() end
+            if iSylHubb then iSylHubb:Destroy() end
             if game.CoreGui:FindFirstChild("ToggleUIButton") then
                 game.CoreGui.ToggleUIButton:Destroy()
             end
@@ -2794,9 +2745,9 @@ function Menghub:Window(GuiConfig)
     return Tabs
 end
 
-return Menghub
+return iSylHub
 
---local Window = Menghub:Window({
+--local Window = iSylHub:Window({
 --	Title = "Napoleon",
 --	Footer = "[Fisch] [v1.0] [JOKI ROD? D STORE SOLUSINYA]",
 --	Color = Color3.fromRGB(255, 255, 255),
