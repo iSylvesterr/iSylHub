@@ -806,6 +806,7 @@ function iSylHub:Window(GuiConfig)
         Yes.TextColor3 = THEME.Text
         Yes.ZIndex = 52
         Yes.Parent = Dialog
+        Instance.new("UICorner", Yes).CornerRadius = UDim.new(0, 4)
 
         local Cancel = Instance.new("TextButton")
         Cancel.Size = UDim2.new(0.45, -10, 0, 32)
@@ -818,6 +819,7 @@ function iSylHub:Window(GuiConfig)
         Cancel.TextColor3 = THEME.TextDim
         Cancel.ZIndex = 52
         Cancel.Parent = Dialog
+        Instance.new("UICorner", Cancel).CornerRadius = UDim.new(0, 4)
 
         Yes.MouseButton1Click:Connect(function()
             Overlay:Destroy()
@@ -849,6 +851,8 @@ function iSylHub:Window(GuiConfig)
     MinimizeIcon.ScaleType = Enum.ScaleType.Fit
     MinimizeIcon.Visible = false
     MinimizeIcon.ZIndex = 100
+
+    Instance.new("UICorner", MinimizeIcon).CornerRadius = UDim.new(0, 8)
 
     -- Red border on minimize icon
     local MinIconStroke = Instance.new("UIStroke")
@@ -1205,6 +1209,7 @@ function iSylHub:Window(GuiConfig)
             SectionReal.Position = UDim2.new(0, 4, 0, 2)
             SectionReal.Name = "SectionReal"
             SectionReal.Parent = Section
+            Instance.new("UICorner", SectionReal).CornerRadius = UDim.new(0, 4)
 
             -- Left accent line on section header
             local SectionAccent = Instance.new("Frame")
@@ -1380,6 +1385,7 @@ function iSylHub:Window(GuiConfig)
                 Paragraph.Size = UDim2.new(1, 0, 0, 46)
                 Paragraph.Name = "Paragraph"
                 Paragraph.Parent = SectionAdd
+                Instance.new("UICorner", Paragraph).CornerRadius = UDim.new(0, 5)
 
                 local iconOffset = 10
                 if ParagraphConfig.Icon then
@@ -1481,6 +1487,7 @@ function iSylHub:Window(GuiConfig)
                 Panel.Size = UDim2.new(1, 0, 0, baseHeight)
                 Panel.LayoutOrder = CountItem
                 Panel.Parent = SectionAdd
+                Instance.new("UICorner", Panel).CornerRadius = UDim.new(0, 5)
 
                 local Title = Instance.new("TextLabel")
                 Title.Font = Enum.Font.GothamBold
@@ -1514,6 +1521,7 @@ function iSylHub:Window(GuiConfig)
                     InputFrame.Position = UDim2.new(0.5, 0, 0, 44)
                     InputFrame.Size = UDim2.new(1, -16, 0, 28)
                     InputFrame.Parent = Panel
+                    Instance.new("UICorner", InputFrame).CornerRadius = UDim.new(0, 4)
 
                     InputBox = Instance.new("TextBox")
                     InputBox.Font = Enum.Font.Gotham
@@ -1541,6 +1549,7 @@ function iSylHub:Window(GuiConfig)
                 ButtonMain.Size = PanelConfig.SubButtonText and UDim2.new(0.5, -10, 0, 28) or UDim2.new(1, -16, 0, 28)
                 ButtonMain.Position = UDim2.new(0, 8, 0, yBtn)
                 ButtonMain.Parent = Panel
+                Instance.new("UICorner", ButtonMain).CornerRadius = UDim.new(0, 4)
 
                 ButtonMain.MouseButton1Click:Connect(function()
                     PanelConfig.ButtonCallback(InputBox and InputBox.Text or "")
@@ -1557,6 +1566,7 @@ function iSylHub:Window(GuiConfig)
                     SubButton.Size = UDim2.new(0.5, -10, 0, 28)
                     SubButton.Position = UDim2.new(0.5, 2, 0, yBtn)
                     SubButton.Parent = Panel
+                    Instance.new("UICorner", SubButton).CornerRadius = UDim.new(0, 4)
                     SubButton.MouseButton1Click:Connect(function()
                         PanelConfig.SubButtonCallback(InputBox and InputBox.Text or "")
                     end)
@@ -1596,6 +1606,7 @@ function iSylHub:Window(GuiConfig)
                 Button.Size = UDim2.new(1, 0, 0, 36)
                 Button.LayoutOrder = CountItem
                 Button.Parent = SectionAdd
+                Instance.new("UICorner", Button).CornerRadius = UDim.new(0, 5)
 
                 local MainButton = Instance.new("TextButton")
                 MainButton.Font = Enum.Font.GothamBold
@@ -1607,6 +1618,7 @@ function iSylHub:Window(GuiConfig)
                 MainButton.Size = ButtonConfig.SubTitle and UDim2.new(0.5, -6, 1, -8) or UDim2.new(1, -8, 1, -8)
                 MainButton.Position = UDim2.new(0, 4, 0, 4)
                 MainButton.Parent = Button
+                Instance.new("UICorner", MainButton).CornerRadius = UDim.new(0, 4)
 
                 -- Hover effect
                 MainButton.MouseEnter:Connect(function()
@@ -1636,6 +1648,7 @@ function iSylHub:Window(GuiConfig)
                     SubButton.Size = UDim2.new(0.5, -6, 1, -8)
                     SubButton.Position = UDim2.new(0.5, 2, 0, 4)
                     SubButton.Parent = Button
+                    Instance.new("UICorner", SubButton).CornerRadius = UDim.new(0, 4)
                     SubButton.MouseButton1Click:Connect(ButtonConfig.SubCallback)
                 end
 
@@ -1665,6 +1678,7 @@ function iSylHub:Window(GuiConfig)
                 Toggle.LayoutOrder = CountItem
                 Toggle.Name = "Toggle"
                 Toggle.Parent = SectionAdd
+                Instance.new("UICorner", Toggle).CornerRadius = UDim.new(0, 5)
 
                 local ToggleTitle = Instance.new("TextLabel")
                 ToggleTitle.Font = Enum.Font.GothamBold
@@ -1722,6 +1736,7 @@ function iSylHub:Window(GuiConfig)
                 FeatureFrame2.Size = UDim2.new(0, 32, 0, 16)
                 FeatureFrame2.Name = "FeatureFrame"
                 FeatureFrame2.Parent = Toggle
+                Instance.new("UICorner", FeatureFrame2).CornerRadius = UDim.new(1, 0)
 
                 local ToggleCircle = Instance.new("Frame")
                 ToggleCircle.BackgroundColor3 = THEME.TextDim
@@ -1730,6 +1745,7 @@ function iSylHub:Window(GuiConfig)
                 ToggleCircle.Position = UDim2.new(0, 2, 0, 2)
                 ToggleCircle.Name = "ToggleCircle"
                 ToggleCircle.Parent = FeatureFrame2
+                Instance.new("UICorner", ToggleCircle).CornerRadius = UDim.new(1, 0)
 
                 local ToggleButton = Instance.new("TextButton")
                 ToggleButton.Text = ""
@@ -1802,6 +1818,7 @@ function iSylHub:Window(GuiConfig)
                 Slider.Size = UDim2.new(1, 0, 0, 46)
                 Slider.Name = "Slider"
                 Slider.Parent = SectionAdd
+                Instance.new("UICorner", Slider).CornerRadius = UDim.new(0, 5)
 
                 local SliderTitle = Instance.new("TextLabel")
                 SliderTitle.Font = Enum.Font.GothamBold
@@ -1841,6 +1858,7 @@ function iSylHub:Window(GuiConfig)
                 SliderValueBox.Position = UDim2.new(1, -148, 0.5, 0)
                 SliderValueBox.Size = UDim2.new(0, 32, 0, 20)
                 SliderValueBox.Parent = Slider
+                Instance.new("UICorner", SliderValueBox).CornerRadius = UDim.new(0, 3)
 
                 -- Slider track
                 local SliderFrame = Instance.new("Frame")
@@ -1851,6 +1869,7 @@ function iSylHub:Window(GuiConfig)
                 SliderFrame.Size = UDim2.new(0, 100, 0, 4)
                 SliderFrame.Name = "SliderFrame"
                 SliderFrame.Parent = Slider
+                Instance.new("UICorner", SliderFrame).CornerRadius = UDim.new(1, 0)
 
                 local SliderDraggable = Instance.new("Frame")
                 SliderDraggable.BackgroundColor3 = THEME.Accent
@@ -1858,6 +1877,7 @@ function iSylHub:Window(GuiConfig)
                 SliderDraggable.Size = UDim2.fromScale(0.9, 1)
                 SliderDraggable.Name = "SliderDraggable"
                 SliderDraggable.Parent = SliderFrame
+                Instance.new("UICorner", SliderDraggable).CornerRadius = UDim.new(1, 0)
 
                 local SliderCircle = Instance.new("Frame")
                 SliderCircle.AnchorPoint = Vector2.new(1, 0.5)
@@ -1867,6 +1887,7 @@ function iSylHub:Window(GuiConfig)
                 SliderCircle.Size = UDim2.new(0, 8, 0, 8)
                 SliderCircle.Name = "SliderCircle"
                 SliderCircle.Parent = SliderDraggable
+                Instance.new("UICorner", SliderCircle).CornerRadius = UDim.new(1, 0)
 
                 local Dragging = false
                 local function Round(Number, Factor)
@@ -1947,6 +1968,7 @@ function iSylHub:Window(GuiConfig)
                 Input.Size = UDim2.new(1, 0, 0, 46)
                 Input.Name = "Input"
                 Input.Parent = SectionAdd
+                Instance.new("UICorner", Input).CornerRadius = UDim.new(0, 5)
 
                 local InputTitle = Instance.new("TextLabel")
                 InputTitle.Font = Enum.Font.GothamBold
@@ -1981,6 +2003,7 @@ function iSylHub:Window(GuiConfig)
                 InputFrame.ClipsDescendants = true
                 InputFrame.Name = "InputFrame"
                 InputFrame.Parent = Input
+                Instance.new("UICorner", InputFrame).CornerRadius = UDim.new(0, 4)
 
                 -- Red bottom line on focus
                 local InputFocusLine = Instance.new("Frame")
@@ -2055,6 +2078,7 @@ function iSylHub:Window(GuiConfig)
                 Dropdown.Size = UDim2.new(1, 0, 0, 46)
                 Dropdown.Name = "Dropdown"
                 Dropdown.Parent = SectionAdd
+                Instance.new("UICorner", Dropdown).CornerRadius = UDim.new(0, 5)
 
                 local DropdownButton = Instance.new("TextButton")
                 DropdownButton.Text = ""
@@ -2095,6 +2119,7 @@ function iSylHub:Window(GuiConfig)
                 SelectOptionsFrame.LayoutOrder = CountDropdown
                 SelectOptionsFrame.Name = "SelectOptionsFrame"
                 SelectOptionsFrame.Parent = Dropdown
+                Instance.new("UICorner", SelectOptionsFrame).CornerRadius = UDim.new(0, 4)
 
                 -- Red bottom line on select frame
                 local SelectLine = Instance.new("Frame")
@@ -2143,6 +2168,7 @@ function iSylHub:Window(GuiConfig)
                 SearchBox.Size = UDim2.new(1, 0, 0, 26)
                 SearchBox.ClearTextOnFocus = false
                 SearchBox.Parent = DropdownContainer
+                Instance.new("UICorner", SearchBox).CornerRadius = UDim.new(0, 3)
 
                 local ScrollSelect = Instance.new("ScrollingFrame")
                 ScrollSelect.Size = UDim2.new(1, 0, 1, -30)
@@ -2363,6 +2389,7 @@ function iSylHub:Window(GuiConfig)
                 SubSection.LayoutOrder = CountItem
                 SubSection.Name = "SubSection"
                 SubSection.Parent = SectionAdd
+                Instance.new("UICorner", SubSection).CornerRadius = UDim.new(0, 4)
 
                 -- Red left accent
                 local SubAccent = Instance.new("Frame")
