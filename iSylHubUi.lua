@@ -1372,6 +1372,8 @@ function iSylHub:Window(GuiConfig)
             UIListLayout2.Parent = SectionAdd
 
             local OpenSection = false
+            local isAnimating = false
+            local ANIM_TIME = 0.35
 
             local function UpdateSizeScroll()
                 local OffsetY = 0
@@ -1391,67 +1393,64 @@ function iSylHub:Window(GuiConfig)
                             SectionSizeYWitdh = SectionSizeYWitdh + v.Size.Y.Offset + 3
                         end
                     end
-                    TweenService:Create(FeatureFrame, TweenInfo.new(0.5), { Rotation = 90 }):Play()
-                    TweenService:Create(Section, TweenInfo.new(0.5), { Size = UDim2.new(1, 1, 0, SectionSizeYWitdh) })
-                        :Play()
-                    TweenService:Create(SectionAdd, TweenInfo.new(0.5),
-                        { Size = UDim2.new(1, 0, 0, SectionSizeYWitdh - 38) }):Play()
-                    TweenService:Create(SectionDecideFrame, TweenInfo.new(0.5), { Size = UDim2.new(1, 0, 0, 2) }):Play()
-                    task.wait(0.5)
-                    UpdateSizeScroll()
+                    -- Cek dulu FeatureFrame masih ada (bisa sudah di-Destroy kalau AlwaysOpen == true)
+                    if FeatureFrame and FeatureFrame.Parent then
+                        TweenService:Create(FeatureFrame, TweenInfo.new(ANIM_TIME), { Rotation = 90 }):Play()
+                    end
+                    TweenService:Create(Section, TweenInfo.new(ANIM_TIME), { Size = UDim2.new(1, 1, 0, SectionSizeYWitdh) }):Play()
+                    TweenService:Create(SectionAdd, TweenInfo.new(ANIM_TIME), { Size = UDim2.new(1, 0, 0, SectionSizeYWitdh - 38) }):Play()
+                    TweenService:Create(SectionDecideFrame, TweenInfo.new(ANIM_TIME), { Size = UDim2.new(1, 0, 0, 2) }):Play()
+                    task.delay(ANIM_TIME, UpdateSizeScroll)
                 end
             end
 
+            --[[
+                Behavior AddSection:
+                - nil (tidak dikasih) = auto OPEN, tapi bisa ditutup/dibuka
+                - false               = mulai CLOSED, bisa dibuka/ditutup
+                - true                = permanent OPEN, tombol dihapus, tidak bisa ditutup
+            ]]
             if AlwaysOpen == true then
+                -- Permanent open: hapus tombol & arrow, langsung set size tanpa animasi
                 SectionButton:Destroy()
                 FeatureFrame:Destroy()
                 OpenSection = true
-                UpdateSizeSection()
+                local SectionSizeYWitdh = 38
+                for _, v in SectionAdd:GetChildren() do
+                    if v.Name ~= "UIListLayout" and v.Name ~= "UICorner" then
+                        SectionSizeYWitdh = SectionSizeYWitdh + v.Size.Y.Offset + 3
+                    end
+                end
+                Section.Size = UDim2.new(1, 1, 0, SectionSizeYWitdh)
+                SectionAdd.Size = UDim2.new(1, 0, 0, SectionSizeYWitdh - 38)
+                SectionDecideFrame.Size = UDim2.new(1, 0, 0, 2)
+                UpdateSizeScroll()
             elseif AlwaysOpen == false then
-                OpenSection = true
-                UpdateSizeSection()
-            else
+                -- Starts closed, bisa toggle
                 OpenSection = false
-            end
-
-            if AlwaysOpen == true then
-                OpenSection = true
-                UpdateSizeSection()
-            elseif AlwaysOpen == false then
-                OpenSection = true
-                UpdateSizeSection()
             else
-                OpenSection = false
+                -- nil: auto open, bisa toggle
+                OpenSection = true
+                UpdateSizeSection()
             end
 
             if AlwaysOpen ~= true then
                 SectionButton.Activated:Connect(function()
                     if isAnimating then return end
                     isAnimating = true
-                    
                     CircleClick(SectionButton, Mouse.X, Mouse.Y)
-                    
-                    local tweenInfo = TweenInfo.new(ANIM_TIME, ANIM_STYLE, ANIM_DIR)
-                    
                     if OpenSection then
-                        -- Animasi tutup section
-                        local tweens = {
-                            TweenService:Create(FeatureImg, tweenInfo, { Rotation = -90 }),
-                            TweenService:Create(Section, tweenInfo, { Size = UDim2.new(1, 1, 0, 30) }),
-                            TweenService:Create(SectionDecideFrame, tweenInfo, { Size = UDim2.new(0, 0, 0, 2) })
-                        }
-                        
-                        for _, tween in tweens do
-                            tween:Play()
-                        end
-                        
+                        -- Tutup section
+                        TweenService:Create(FeatureFrame, TweenInfo.new(ANIM_TIME), { Rotation = -90 }):Play()
+                        TweenService:Create(Section, TweenInfo.new(ANIM_TIME), { Size = UDim2.new(1, 1, 0, 30) }):Play()
+                        TweenService:Create(SectionDecideFrame, TweenInfo.new(ANIM_TIME), { Size = UDim2.new(0, 0, 0, 2) }):Play()
                         OpenSection = false
                         task.delay(ANIM_TIME, function()
                             UpdateSizeScroll()
                             isAnimating = false
                         end)
                     else
-                        -- Animasi buka section
+                        -- Buka section
                         OpenSection = true
                         UpdateSizeSection()
                         task.delay(ANIM_TIME, function()
@@ -1461,23 +1460,12 @@ function iSylHub:Window(GuiConfig)
                 end)
             end
 
-            if AlwaysOpen ~= nil then
-                OpenSection = true
-                local SectionSizeYWitdh = 38
-                for _, v in SectionAdd:GetChildren() do
-                    if v.Name ~= "UIListLayout" and v.Name ~= "UICorner" then
-                        SectionSizeYWitdh = SectionSizeYWitdh + v.Size.Y.Offset + 3
-                    end
-                end
-                FeatureImg.Rotation = 0
-                Section.Size = UDim2.new(1, 1, 0, SectionSizeYWitdh)
-                SectionAdd.Size = UDim2.new(1, 0, 0, SectionSizeYWitdh - 38)
-                SectionDecideFrame.Size = UDim2.new(1, 0, 0, 2)
-                UpdateSizeScroll()
-            end
-
-            SectionAdd.ChildAdded:Connect(UpdateSizeSection)
-            SectionAdd.ChildRemoved:Connect(UpdateSizeSection)
+            SectionAdd.ChildAdded:Connect(function()
+                task.delay(0.05, UpdateSizeSection)
+            end)
+            SectionAdd.ChildRemoved:Connect(function()
+                task.delay(0.05, UpdateSizeSection)
+            end)
 
             local layout = ScrolLayers:FindFirstChildOfClass("UIListLayout")
             if layout then
