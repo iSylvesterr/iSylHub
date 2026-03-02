@@ -1403,7 +1403,6 @@ function iSylHub:Window(GuiConfig)
             end
 
             if AlwaysOpen == true then
-                SectionButton:Destroy()
                 FeatureFrame:Destroy()
                 OpenSection = true
                 UpdateSizeSection()
