@@ -830,11 +830,11 @@ function iSylHub:Window(GuiConfig)
 
         local Gradient = Instance.new("UIGradient")
         Gradient.Color = ColorSequence.new({
-            ColorSequenceKeypoint.new(0.0, Color3.fromRGB(0, 191, 255)),
-            ColorSequenceKeypoint.new(0.25, Color3.fromRGB(255, 255, 255)),
-            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(0, 140, 255)),
-            ColorSequenceKeypoint.new(0.75, Color3.fromRGB(255, 255, 255)),
-            ColorSequenceKeypoint.new(1.0, Color3.fromRGB(0, 191, 255))
+            ColorSequenceKeypoint.new(0.0, Color3.fromRGB(120, 10, 25)),
+            ColorSequenceKeypoint.new(0.25, Color3.fromRGB(185, 28, 48)),
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(140, 15, 30)),
+            ColorSequenceKeypoint.new(0.75, Color3.fromRGB(185, 28, 48)),
+            ColorSequenceKeypoint.new(1.0, Color3.fromRGB(120, 10, 25))
         })
         Gradient.Rotation = 90
         Gradient.Parent = DialogGlow
@@ -844,7 +844,7 @@ function iSylHub:Window(GuiConfig)
         Title.Position = UDim2.new(0, 0, 0, 4)
         Title.BackgroundTransparency = 1
         Title.Font = Enum.Font.GothamBold
-        Title.Text = "Meng Hub Window"
+        Title.Text = "iSylHub"
         Title.TextSize = 22
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.ZIndex = 52
