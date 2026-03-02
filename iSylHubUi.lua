@@ -786,7 +786,7 @@ function iSylHub:Window(GuiConfig)
     ScrollTab.ChildRemoved:Connect(UpdateSize1)
 
     function GuiFunc:DestroyGui()
-        if CoreGui:FindFirstChild("iSylHubb") then
+        if CoreGui:FindFirstChild("iSylHubb Window") then
             iSylHubb:Destroy()
         end
     end
@@ -805,11 +805,11 @@ function iSylHub:Window(GuiConfig)
         Overlay.ZIndex = 50
         Overlay.Parent = DropShadowHolder
 
-        local Dialog = Instance.new("ImageLabel")
+        local Dialog = Instance.new("Frame")
         Dialog.Size = UDim2.new(0, 300, 0, 150)
         Dialog.Position = UDim2.new(0.5, -150, 0.5, -75)
-        Dialog.Image = "rbxassetid://9542022979"
-        Dialog.ImageTransparency = 0
+        Dialog.BackgroundColor3 = Color3.fromRGB(14, 14, 18)
+        Dialog.BackgroundTransparency = 0
         Dialog.BorderSizePixel = 0
         Dialog.ZIndex = 51
         Dialog.Parent = Overlay
