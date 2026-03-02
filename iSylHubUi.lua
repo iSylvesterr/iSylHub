@@ -276,7 +276,7 @@ function iSylHub:MakeNotify(NotifyConfig)
     NotifyConfig.Title = NotifyConfig.Title or "iSylHub"
     NotifyConfig.Description = NotifyConfig.Description or "Notification"
     NotifyConfig.Content = NotifyConfig.Content or "Content"
-    NotifyConfig.Icon = NotifyConfig.Icon or "93732999692312"
+    NotifyConfig.Icon = NotifyConfig.Icon or "101669656973003"
     NotifyConfig.Color = NotifyConfig.Color or Color3.fromRGB(185, 28, 48)
     NotifyConfig.Time = NotifyConfig.Time or 0.5
     NotifyConfig.Delay = NotifyConfig.Delay or 5
