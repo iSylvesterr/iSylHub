@@ -525,7 +525,6 @@ function iSylHub:Window(GuiConfig)
     local DecideFrame = Instance.new("Frame");
     local Layers = Instance.new("Frame");
     local UICorner6 = Instance.new("UICorner");
-    local NameTab = Instance.new("TextLabel");
     local LayersReal = Instance.new("Frame");
     local LayersFolder = Instance.new("Folder");
     local LayersPageLayout = Instance.new("UIPageLayout");
@@ -719,19 +718,6 @@ function iSylHub:Window(GuiConfig)
 
 
 
-    NameTab.Font = Enum.Font.GothamBold
-    NameTab.Text = ""
-    NameTab.TextColor3 = Color3.fromRGB(255, 255, 255)
-    NameTab.TextSize = 24
-    NameTab.TextWrapped = true
-    NameTab.TextXAlignment = Enum.TextXAlignment.Left
-    NameTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    NameTab.BackgroundTransparency = 0.9990000128746033
-    NameTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    NameTab.BorderSizePixel = 0
-    NameTab.Size = UDim2.new(1, 0, 0, 30)
-    NameTab.Name = "NameTab"
-    NameTab.Parent = Layers
 
     LayersReal.AnchorPoint = Vector2.new(0, 1)
     LayersReal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -786,7 +772,7 @@ function iSylHub:Window(GuiConfig)
     ScrollTab.ChildRemoved:Connect(UpdateSize1)
 
     function GuiFunc:DestroyGui()
-        if CoreGui:FindFirstChild("iSylHubb Window") then
+        if CoreGui:FindFirstChild("iSylHubb") then
             iSylHubb:Destroy()
         end
     end
@@ -1180,7 +1166,6 @@ function iSylHub:Window(GuiConfig)
         FeatureImg.Parent = Tab
         if CountTab == 0 then
             LayersPageLayout:JumpToIndex(0)
-            NameTab.Text = TabConfig.Name
             local ChooseFrame = Instance.new("Frame");
             ChooseFrame.BackgroundColor3 = GuiConfig.Color
             ChooseFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1238,7 +1223,6 @@ function iSylHub:Window(GuiConfig)
                 ):Play()
                 LayersPageLayout:JumpToIndex(Tab.LayoutOrder)
                 task.wait(0.05)
-                NameTab.Text = TabConfig.Name
                 TweenService:Create(
                     FrameChoose,
                     TweenInfo.new(0.35, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),
