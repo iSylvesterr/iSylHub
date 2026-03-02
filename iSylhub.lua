@@ -1,7 +1,17 @@
-local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/iSylvesterr/iSylHub/refs/heads/main/isyl.lua"))()
+local games = {
+    [6051475510] = "https://raw.githubusercontent.com/GrexXMeng/Mengs/refs/heads/main/Fisch.lua",         -- Fisch Universe (Main)
+}
 
-local URL = Games[game.PlaceId]
+local currentPlaceID = game.PlaceId
+local currentUniverseID = game.GameId
 
-if URL then
-  loadstring(game:HttpGet(URL))()
+local scriptURL = games[currentUniverseID] or games[currentPlaceID]
+
+if scriptURL then
+    print("Meng Hub: Loading script for ID " .. (games[currentUniverseID] and "Universe" or "Place"))
+    loadstring(game:HttpGet(scriptURL))()
+else
+    local msg = "\nMap not supported yet!\nPlaceId: " .. tostring(currentPlaceID) .. "\nUniverseId: " .. tostring(currentUniverseID)
+    game.Players.LocalPlayer:Kick(msg)
+    print(msg)
 end
