@@ -276,7 +276,7 @@ function iSylHub:MakeNotify(NotifyConfig)
     NotifyConfig.Title = NotifyConfig.Title or "iSylHub"
     NotifyConfig.Description = NotifyConfig.Description or "Notification"
     NotifyConfig.Content = NotifyConfig.Content or "Content"
-    NotifyConfig.Icon = NotifyConfig.Icon or "101669656973003"
+    NotifyConfig.Icon = NotifyConfig.Icon or "93732999692312"
     NotifyConfig.Color = NotifyConfig.Color or Color3.fromRGB(185, 28, 48)
     NotifyConfig.Time = NotifyConfig.Time or 0.5
     NotifyConfig.Delay = NotifyConfig.Delay or 5
@@ -1247,10 +1247,12 @@ function iSylHub:Window(GuiConfig)
             local UIGradient = Instance.new("UIGradient");
 
             Section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Section.BackgroundTransparency = 0.999 
+            Section.BackgroundTransparency = 0.9990000128746033
+            Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
             Section.BorderSizePixel = 0
             Section.LayoutOrder = CountSection
             Section.ClipsDescendants = true
+            Section.LayoutOrder = 1
             Section.Size = UDim2.new(1, 0, 0, 30)
             Section.Name = "Section"
             Section.Parent = ScrolLayers
@@ -1262,25 +1264,19 @@ function iSylHub:Window(GuiConfig)
             local FeatureFrame = Instance.new("Frame");
             local FeatureImg = Instance.new("ImageLabel");
             local SectionTitle = Instance.new("TextLabel");
-            local SectionOutline = Instance.new("UIStroke")
-
-            SectionOutline.Name = "SectionOutline"
-            SectionOutline.Parent = SectionReal 
-            SectionOutline.Color = Color3.fromRGB(189, 162, 241) 
-            SectionOutline.Thickness = 1.5
-            SectionOutline.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            SectionOutline.Transparency = 0.2 
 
             SectionReal.AnchorPoint = Vector2.new(0.5, 0)
-            SectionReal.BackgroundColor3 = Color3.fromRGB(30, 30, 35) 
-            SectionReal.BackgroundTransparency = 0.5 
+            SectionReal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            SectionReal.BackgroundTransparency = 0.9350000023841858
+            SectionReal.BorderColor3 = Color3.fromRGB(0, 0, 0)
             SectionReal.BorderSizePixel = 0
+            SectionReal.LayoutOrder = 1
             SectionReal.Position = UDim2.new(0.5, 0, 0, 0)
-            SectionReal.Size = UDim2.new(1, -2, 0, 30)
+            SectionReal.Size = UDim2.new(1, 1, 0, 30)
             SectionReal.Name = "SectionReal"
             SectionReal.Parent = Section
 
-            UICorner.CornerRadius = UDim.new(0, 6)
+            UICorner.CornerRadius = UDim.new(0, 4)
             UICorner.Parent = SectionReal
 
             SectionButton.Font = Enum.Font.SourceSans
@@ -1320,7 +1316,7 @@ function iSylHub:Window(GuiConfig)
             SectionTitle.Font = Enum.Font.GothamBold
             SectionTitle.Text = Title
             SectionTitle.TextColor3 = Color3.fromRGB(230.77499270439148, 230.77499270439148, 230.77499270439148)
-            SectionTitle.TextSize = 15
+            SectionTitle.TextSize = 13
             SectionTitle.TextXAlignment = Enum.TextXAlignment.Left
             SectionTitle.TextYAlignment = Enum.TextYAlignment.Top
             SectionTitle.AnchorPoint = Vector2.new(0, 0.5)
@@ -1376,12 +1372,6 @@ function iSylHub:Window(GuiConfig)
             UIListLayout2.Parent = SectionAdd
 
             local OpenSection = false
-            local isAnimating = false
-
-            -- Animation settings - lebih cepat & smooth
-            local ANIM_TIME = 0.25
-            local ANIM_STYLE = Enum.EasingStyle.Quart
-            local ANIM_DIR = Enum.EasingDirection.Out
 
             local function UpdateSizeScroll()
                 local OffsetY = 0
@@ -1401,23 +1391,27 @@ function iSylHub:Window(GuiConfig)
                             SectionSizeYWitdh = SectionSizeYWitdh + v.Size.Y.Offset + 3
                         end
                     end
-                    
-                    -- Animasi buka section - semua sync
-                    local tweenInfo = TweenInfo.new(ANIM_TIME, ANIM_STYLE, ANIM_DIR)
-                    local tweens = {
-                        TweenService:Create(FeatureImg, tweenInfo, { Rotation = 0 }),
-                        TweenService:Create(Section, tweenInfo, { Size = UDim2.new(1, 1, 0, SectionSizeYWitdh) }),
-                        TweenService:Create(SectionAdd, tweenInfo, { Size = UDim2.new(1, 0, 0, SectionSizeYWitdh - 38) }),
-                        TweenService:Create(SectionDecideFrame, tweenInfo, { Size = UDim2.new(1, 0, 0, 2) })
-                    }
-                    
-                    for _, tween in tweens do
-                        tween:Play()
-                    end
-                    
-                    -- Update scroll size setelah animasi selesai
-                    task.delay(ANIM_TIME, UpdateSizeScroll)
+                    TweenService:Create(FeatureFrame, TweenInfo.new(0.5), { Rotation = 90 }):Play()
+                    TweenService:Create(Section, TweenInfo.new(0.5), { Size = UDim2.new(1, 1, 0, SectionSizeYWitdh) })
+                        :Play()
+                    TweenService:Create(SectionAdd, TweenInfo.new(0.5),
+                        { Size = UDim2.new(1, 0, 0, SectionSizeYWitdh - 38) }):Play()
+                    TweenService:Create(SectionDecideFrame, TweenInfo.new(0.5), { Size = UDim2.new(1, 0, 0, 2) }):Play()
+                    task.wait(0.5)
+                    UpdateSizeScroll()
                 end
+            end
+
+            if AlwaysOpen == true then
+                SectionButton:Destroy()
+                FeatureFrame:Destroy()
+                OpenSection = true
+                UpdateSizeSection()
+            elseif AlwaysOpen == false then
+                OpenSection = true
+                UpdateSizeSection()
+            else
+                OpenSection = false
             end
 
             if AlwaysOpen == true then
