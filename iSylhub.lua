@@ -1,5 +1,7 @@
 local games = {
-    [6051475510] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",         -- Fisch Universe (Main)
+    [6051475510] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",
+    [16732694052] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",
+    [131716211654599] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",
 }
 
 local currentPlaceID = game.PlaceId
