@@ -629,7 +629,7 @@ function iSylHub:Window(GuiConfig)
     TextLabel1.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel1.BorderSizePixel = 0
     TextLabel1.Size = UDim2.new(0.5, 0, 1, 0)
-    TextLabel1.Position = UDim2.new(0, 112, 0, 0)
+    TextLabel1.Position = UDim2.new(0, 100, 0, 0)
     TextLabel1.Parent = Top
 
     Close.Font = Enum.Font.SourceSans
@@ -879,21 +879,26 @@ function iSylHub:Window(GuiConfig)
         Instance.new("UICorner", Cancel).CornerRadius = UDim.new(0, 6)
 
         Yes.MouseButton1Click:Connect(function()
-            -- Reset semua elemen ke default saat close
+            -- Reset semua elemen saat close
             for key, element in pairs(Elements) do
                 if element.Set then
-                    if element.Type == "Toggle" then
-                        pcall(function() element:Set(false) end)
-                    elseif element.Type == "Slider" then
+                    -- Toggle: cek dari key prefix
+                    if string.find(key, "^Toggle_") then
+                        pcall(function()
+                            if element.Value == true then
+                                element:Set(false)
+                            end
+                        end)
+                    elseif string.find(key, "^Slider_") then
                         pcall(function() element:Set(element.Default or 0) end)
-                    elseif element.Type == "Dropdown" then
+                    elseif string.find(key, "^Dropdown_") then
                         pcall(function() element:Set(element.Default or "") end)
-                    elseif element.Type == "Input" then
+                    elseif string.find(key, "^Input_") then
                         pcall(function() element:Set("") end)
                     end
                 end
             end
-            task.wait(0.1)
+            task.wait(0.2)
             if iSylHubb then iSylHubb:Destroy() end
             if game.CoreGui:FindFirstChild("ToggleUIButton") then
                 game.CoreGui.ToggleUIButton:Destroy()
