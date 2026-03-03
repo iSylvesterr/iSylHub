@@ -629,7 +629,7 @@ function iSylHub:Window(GuiConfig)
     TextLabel1.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel1.BorderSizePixel = 0
     TextLabel1.Size = UDim2.new(0.5, 0, 1, 0)
-    TextLabel1.Position = UDim2.new(0, 100, 0, 0)
+    TextLabel1.Position = UDim2.new(0, 88, 0, 0)
     TextLabel1.Parent = Top
 
     Close.Font = Enum.Font.SourceSans
