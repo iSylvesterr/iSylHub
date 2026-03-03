@@ -628,8 +628,8 @@ function iSylHub:Window(GuiConfig)
     TextLabel1.BackgroundTransparency = 0.9990000128746033
     TextLabel1.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel1.BorderSizePixel = 0
-    TextLabel1.Size = UDim2.new(1, -(TextLabel.TextBounds.X + 104), 1, 0)
-    TextLabel1.Position = UDim2.new(0, TextLabel.TextBounds.X + 40, 0, 0)
+    TextLabel1.Size = UDim2.new(0.5, 0, 1, 0)
+    TextLabel1.Position = UDim2.new(0, 150, 0, 0)
     TextLabel1.Parent = Top
 
     Close.Font = Enum.Font.SourceSans
@@ -1736,7 +1736,7 @@ function iSylHub:Window(GuiConfig)
                     InputBox.FocusLost:Connect(function()
                         PanelFunc.Value = InputBox.Text
                         ConfigData[configKey] = InputBox.Text
-                        SaveConfig()
+                        -- SaveConfig() -- disabled: use manual save
                     end)
                 end
 
@@ -1956,7 +1956,7 @@ function iSylHub:Window(GuiConfig)
                         if not ok then warn("Toggle Callback error:", err) end
                     end
                     ConfigData[configKey] = Value
-                    SaveConfig()
+                    -- SaveConfig() -- disabled: use manual save
                     if Value then
                         TweenService:Create(ToggleTitle, TweenInfo.new(0.2), { TextColor3 = GuiConfig.Color }):Play()
                         TweenService:Create(ToggleCircle, TweenInfo.new(0.2), { Position = UDim2.new(0, 15, 0, 0) })
@@ -2156,7 +2156,7 @@ function iSylHub:Window(GuiConfig)
 
                     SliderConfig.Callback(Value)
                     ConfigData[configKey] = Value
-                    SaveConfig()
+                    -- SaveConfig() -- disabled: use manual save
                 end
 
                 SliderFrame.InputBegan:Connect(function(Input)
@@ -2331,7 +2331,7 @@ function iSylHub:Window(GuiConfig)
                     InputFunc.Value = Value
                     InputConfig.Callback(Value)
                     ConfigData[configKey] = Value
-                    SaveConfig()
+                    -- SaveConfig() -- disabled: use manual save
                 end
 
                 InputFunc:Set(InputFunc.Value)
@@ -2604,7 +2604,7 @@ function iSylHub:Window(GuiConfig)
                     end
 
                     ConfigData[configKey] = DropdownFunc.Value
-                    SaveConfig()
+                    -- SaveConfig() -- disabled: use manual save
 
                     local texts = {}
                     for _, Drop in ScrollSelect:GetChildren() do
@@ -2747,14 +2747,3 @@ function iSylHub:Window(GuiConfig)
 end
 
 return iSylHub
-
---local Window = iSylHub:Window({
---	Title = "Napoleon",
---	Footer = "[Fisch] [v1.0] [JOKI ROD? D STORE SOLUSINYA]",
---	Color = Color3.fromRGB(255, 255, 255),
---	Color2 = Color3.fromRGB(192, 192, 192),
---	["Tab Width"] = 130,
---	Image = "136289055140268",
---	WindowIMG = "93732999692312",
---	LogoHUB = "136289055140268"
---})
