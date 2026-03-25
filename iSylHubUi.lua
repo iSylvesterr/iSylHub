@@ -1725,6 +1725,7 @@ function iSylHub:Window(GuiConfig)
                     InputBox.Size = UDim2.new(1, -10, 1, -6)
                     InputBox.Position = UDim2.new(0, 5, 0, 3)
                     InputBox.Parent = InputFrame
+					InputBox.ClearTextOnFocus = false
                 end
 
                 local yBtn = 0
@@ -2372,8 +2373,9 @@ function iSylHub:Window(GuiConfig)
                 InputTextBox.BorderSizePixel = 0
                 InputTextBox.Position = UDim2.new(0, 5, 0.5, 0)
                 InputTextBox.Size = UDim2.new(1, -10, 1, -8)
-                InputTextBox.Name = "InputTextBox"
+				InputTextBox.Name = "InputTextBox"
                 InputTextBox.Parent = InputFrame
+                InputTextBox.ClearTextOnFocus = false
                 function InputFunc:Set(Value)
                     InputTextBox.Text = Value
                     InputFunc.Value = Value
