@@ -5,6 +5,7 @@ local games = {
     [78632820802305] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/GetFish.lua",
     [130342654546662] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/SambungKata.lua",
     [110369730911937] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/cdid.lua",
+    [6701277882] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fish It.lua",
 }
 
 local currentPlaceID = game.PlaceId
