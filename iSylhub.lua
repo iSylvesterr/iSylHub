@@ -23,19 +23,14 @@ if scriptURL then
         local totalSteps = 5
         for i = 1, totalSteps do
             local percent = math.floor((i / totalSteps) * 100)
-            local barFilled = string.rep("=", i * 2)
-            local barEmpty = string.rep(" ", (totalSteps * 2) - (i * 2))
-            
-            local hexColor = "#FFA500" 
-            if percent == 100 then 
-                hexColor = "#00FF00" 
-            end
+            -- Menggunakan blok solid untuk bar yang terisi, dan titik-titik untuk yang kosong
+            local barFilled = string.rep("█", i * 2)
+            local barEmpty = string.rep("▒", (totalSteps * 2) - (i * 2))
             
             local modeText = isUniverse and "Universe" or "Place"
-            local printMsg = string.format("<font color=\"%s\">[iSylHub] Loading %s\n[%s%s] %d%%</font>", hexColor, modeText, barFilled, barEmpty, percent)
             
-            print(printMsg)
-            task.wait(0.25)
+            print(string.format("[iSylHub] Loading %s | [%s%s] %d%%", modeText, barFilled, barEmpty, percent))
+            task.wait(0.2)
         end
     end
     
@@ -46,14 +41,14 @@ if scriptURL then
     end)
 
     if not success then
-        local errMsg = "<font color=\"#FF0000\">[iSylHub] Gagal memuat script! Error: " .. tostring(err) .. "</font>"
-        print(errMsg)
+        -- Menggunakan warn() agar teks menjadi kuning/oranye di console
+        warn("[iSylHub] Gagal memuat script! Error: " .. tostring(err))
         game.Players.LocalPlayer:Kick("\niSylHub Error:\n" .. tostring(err))
     else
-        print("<font color=\"#00FFFF\">[iSylHub] Script berhasil dieksekusi!</font>")
+        print("[iSylHub] Script berhasil dieksekusi!")
     end
 else
-    local failMsg = "<font color=\"#FF0000\">[iSylHub] Map not supported yet!\nPlaceId: " .. tostring(currentPlaceID) .. "\nUniverseId: " .. tostring(currentUniverseID) .. "</font>"
-    print(failMsg)
+    -- Menggunakan warn() agar mencolok saat game tidak didukung
+    warn("[iSylHub] Map not supported yet!\nPlaceId: " .. tostring(currentPlaceID) .. "\nUniverseId: " .. tostring(currentUniverseID))
     game.Players.LocalPlayer:Kick("\nMap not supported yet!")
 end
