@@ -1,5 +1,4 @@
 local games = {
-    -- Kamu bisa bebas memasukkan UniverseId (GameId) maupun PlaceId ke sini
     [5750914919]      = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",
     [16732694052]     = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",
     [131716211654599] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",
@@ -9,7 +8,7 @@ local games = {
     [6701277882]      = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fish It.lua",
 }
 
--- [IMPROVEMENT 1]: Tunggu hingga UniverseId valid (mencegah bug GameId bernilai 0 di Auto-Execute)
+
 if game.GameId == 0 then
     game:GetPropertyChangedSignal("GameId"):Wait()
 end
