@@ -1992,33 +1992,37 @@ function iSylHub:Window(GuiConfig)
                     ToggleFunc:Set(ToggleFunc.Value)
                 end)
 
-                function ToggleFunc:Set(Value)
-                    if typeof(ToggleConfig.Callback) == "function" then
-                        local ok, err = pcall(function()
-                            ToggleConfig.Callback(Value)
-                        end)
-                        if not ok then warn("Toggle Callback error:", err) end
-                    end
-                    ConfigData[configKey] = Value
-                    -- SaveConfig() -- disabled: use manual save
-                    if Value then
-                        TweenService:Create(ToggleTitle, TweenInfo.new(0.2), { TextColor3 = GuiConfig.Color }):Play()
-                        TweenService:Create(ToggleCircle, TweenInfo.new(0.2), { Position = UDim2.new(0, 15, 0, 0) })
-                            :Play()
-                        TweenService:Create(UIStroke8, TweenInfo.new(0.2), { Color = GuiConfig.Color, Transparency = 0 })
-                            :Play()
-                        TweenService:Create(FeatureFrame2, TweenInfo.new(0.2),
-                            { BackgroundColor3 = GuiConfig.Color, BackgroundTransparency = 0 }):Play()
-                    else
-                        TweenService:Create(ToggleTitle, TweenInfo.new(0.2),
-                            { TextColor3 = Color3.fromRGB(230, 230, 230) }):Play()
-                        TweenService:Create(ToggleCircle, TweenInfo.new(0.2), { Position = UDim2.new(0, 0, 0, 0) }):Play()
-                        TweenService:Create(UIStroke8, TweenInfo.new(0.2),
-                            { Color = Color3.fromRGB(255, 255, 255), Transparency = 0.9 }):Play()
-                        TweenService:Create(FeatureFrame2, TweenInfo.new(0.2),
-                            { BackgroundColor3 = Color3.fromRGB(255, 255, 255), BackgroundTransparency = 0.92 }):Play()
-                    end
-                end
+	local isInCallback = false
+			function ToggleFunc:Set(Value)
+				ToggleFunc.Value = Value
+				ConfigData[configKey] = Value
+	
+				if Value then
+					TweenService:Create(ToggleTitle, TweenInfo.new(0.2), { TextColor3 = GuiConfig.Color }):Play()
+					TweenService:Create(ToggleCircle, TweenInfo.new(0.2), { Position = UDim2.new(0, 15, 0, 0) }):Play()
+					TweenService:Create(UIStroke8, TweenInfo.new(0.2), { Color = GuiConfig.Color, Transparency = 0 }):Play()
+					TweenService:Create(FeatureFrame2, TweenInfo.new(0.2), { BackgroundColor3 = GuiConfig.Color, BackgroundTransparency = 0 }):Play()
+				else
+					TweenService:Create(ToggleTitle, TweenInfo.new(0.2), { TextColor3 = Color3.fromRGB(230, 230, 230) }):Play()
+					TweenService:Create(ToggleCircle, TweenInfo.new(0.2), { Position = UDim2.new(0, 0, 0, 0) }):Play()
+					TweenService:Create(UIStroke8, TweenInfo.new(0.2), { Color = Color3.fromRGB(255, 255, 255), Transparency = 0.9 }):Play()
+					TweenService:Create(FeatureFrame2, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(255, 255, 255), BackgroundTransparency = 0.92 }):Play()
+				end
+	
+				if not isInCallback then
+					isInCallback = true
+					task.spawn(function()
+						if typeof(ToggleConfig.Callback) == "function" then
+							local ok, err = pcall(function()
+								ToggleConfig.Callback(Value)
+							end)
+							if not ok then warn("Toggle Callback error:", err) end
+						end
+						task.wait(0.05)
+						isInCallback = false
+					end)
+				end
+			end
 
                 ToggleFunc:Set(ToggleFunc.Value)
                 CountItem = CountItem + 1
