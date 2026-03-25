@@ -16,15 +16,13 @@ end
 local currentPlaceID = game.PlaceId
 local currentUniverseID = game.GameId
 
--- Cek apakah script tersedia untuk UniverseId atau PlaceId
+
 local scriptURL = games[currentUniverseID] or games[currentPlaceID]
 local isUniverse = (games[currentUniverseID] ~= nil)
 
 if scriptURL then
-    -- Print info agar jelas script mana yang terpanggil
     print("iSylHub: Loading script for " .. (isUniverse and "Universe ID: " .. tostring(currentUniverseID) or "Place ID: " .. tostring(currentPlaceID)))
     
-    -- [IMPROVEMENT 2]: Menggunakan pcall agar executor tidak crash jika link GitHub mati / error
     local success, err = pcall(function()
         loadstring(game:HttpGet(scriptURL))()
     end)
