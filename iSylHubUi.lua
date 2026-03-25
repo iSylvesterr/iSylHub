@@ -106,6 +106,21 @@ local Mouse = LocalPlayer:GetMouse()
 local CoreGui = game:GetService("CoreGui")
 local viewport = workspace.CurrentCamera.ViewportSize
 
+-- [[ HASH SYSTEM PENAMBAHAN ]] --
+local function generateHash(length)
+    local chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    local hash = ""
+    math.randomseed(tick() * 1000 + math.random(1, 99999))
+    for i = 1, length do
+        local rand = math.random(1, #chars)
+        hash = hash .. chars:sub(rand, rand)
+    end
+    return hash
+end
+
+local GUI_HASH = generateHash(12)
+local RobloxGui = CoreGui:WaitForChild("RobloxGui")
+
 local function isMobileDevice()
     return UserInputService.TouchEnabled
         and not UserInputService.KeyboardEnabled
@@ -282,13 +297,14 @@ function iSylHub:MakeNotify(NotifyConfig)
     NotifyConfig.Delay = NotifyConfig.Delay or 5
     local NotifyFunction = {}
     spawn(function()
-        if not CoreGui:FindFirstChild("NotifyGui") then
+        -- [[ PINDAH KE ROBLOXGUI ]] --
+        if not RobloxGui:FindFirstChild("NotifyGui") then
             local NotifyGui = Instance.new("ScreenGui");
             NotifyGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
             NotifyGui.Name = "NotifyGui"
-            NotifyGui.Parent = CoreGui
+            NotifyGui.Parent = RobloxGui
         end
-        if not CoreGui.NotifyGui:FindFirstChild("NotifyLayout") then
+        if not RobloxGui.NotifyGui:FindFirstChild("NotifyLayout") then
             local NotifyLayout = Instance.new("Frame");
             NotifyLayout.AnchorPoint = Vector2.new(1, 1)
             NotifyLayout.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -298,11 +314,11 @@ function iSylHub:MakeNotify(NotifyConfig)
             NotifyLayout.Position = UDim2.new(1, -30, 1, -30)
             NotifyLayout.Size = UDim2.new(0, 320, 1, 0)
             NotifyLayout.Name = "NotifyLayout"
-            NotifyLayout.Parent = CoreGui.NotifyGui
+            NotifyLayout.Parent = RobloxGui.NotifyGui
             local Count = 0
-            CoreGui.NotifyGui.NotifyLayout.ChildRemoved:Connect(function()
+            RobloxGui.NotifyGui.NotifyLayout.ChildRemoved:Connect(function()
                 Count = 0
-                for i, v in CoreGui.NotifyGui.NotifyLayout:GetChildren() do
+                for i, v in RobloxGui.NotifyGui.NotifyLayout:GetChildren() do
                     TweenService:Create(
                         v,
                         TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),
@@ -313,7 +329,7 @@ function iSylHub:MakeNotify(NotifyConfig)
             end)
         end
         local NotifyPosHeigh = 0
-        for i, v in CoreGui.NotifyGui.NotifyLayout:GetChildren() do
+        for i, v in RobloxGui.NotifyGui.NotifyLayout:GetChildren() do
             NotifyPosHeigh = -(v.Position.Y.Offset) + v.Size.Y.Offset + 12
         end
         local NotifyFrame = Instance.new("Frame");
@@ -335,7 +351,7 @@ function iSylHub:MakeNotify(NotifyConfig)
         NotifyFrame.Size = UDim2.new(1, 0, 0, 150)
         NotifyFrame.Name = "NotifyFrame"
         NotifyFrame.BackgroundTransparency = 1
-        NotifyFrame.Parent = CoreGui.NotifyGui.NotifyLayout
+        NotifyFrame.Parent = RobloxGui.NotifyGui.NotifyLayout
         NotifyFrame.AnchorPoint = Vector2.new(0, 1)
         NotifyFrame.Position = UDim2.new(0, 0, 1, -(NotifyPosHeigh))
 
@@ -529,10 +545,11 @@ function iSylHub:Window(GuiConfig)
     local LayersFolder = Instance.new("Folder");
     local LayersPageLayout = Instance.new("UIPageLayout");
 
+    -- [[ PINDAH KE ROBLOXGUI & HASH NAMA ]] --
     iSylHubb.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    iSylHubb.Name = "iSylHubb"
+    iSylHubb.Name = GUI_HASH
     iSylHubb.ResetOnSpawn = false
-    iSylHubb.Parent = game:GetService("CoreGui")
+    iSylHubb.Parent = RobloxGui
 
     DropShadowHolder.BackgroundTransparency = 1
 	--DropShadowHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -771,9 +788,11 @@ function iSylHub:Window(GuiConfig)
     ScrollTab.ChildAdded:Connect(UpdateSize1)
     ScrollTab.ChildRemoved:Connect(UpdateSize1)
 
+    -- [[ PINDAH KE ROBLOXGUI & CEK HASH ]] --
     function GuiFunc:DestroyGui()
-        if CoreGui:FindFirstChild("iSylHubb") then
-            iSylHubb:Destroy()
+        local found = RobloxGui:FindFirstChild(GUI_HASH)
+        if found then
+            found:Destroy()
         end
     end
 
@@ -899,10 +918,14 @@ function iSylHub:Window(GuiConfig)
                 end
             end
             task.wait(0.2)
-            if iSylHubb then iSylHubb:Destroy() end
-            if game.CoreGui:FindFirstChild("ToggleUIButton") then
-                game.CoreGui.ToggleUIButton:Destroy()
-            end
+            
+            -- [[ HAPUS DARI ROBLOXGUI ]] --
+            local mainGui = RobloxGui:FindFirstChild(GUI_HASH)
+            if mainGui then mainGui:Destroy() end
+            local toggleGui = RobloxGui:FindFirstChild("ToggleUIButton")
+            if toggleGui then toggleGui:Destroy() end
+            local notifGui = RobloxGui:FindFirstChild("NotifyGui")
+            if notifGui then notifGui:Destroy() end
         end)
 
         Cancel.MouseButton1Click:Connect(function()
@@ -922,7 +945,8 @@ function iSylHub:Window(GuiConfig)
 
     function GuiFunc:ToggleUI()
         local ScreenGui = Instance.new("ScreenGui")
-        ScreenGui.Parent = game:GetService("CoreGui")
+        -- [[ PINDAH KE ROBLOXGUI ]] --
+        ScreenGui.Parent = RobloxGui
         ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
         ScreenGui.Name = "ToggleUIButton"
 
