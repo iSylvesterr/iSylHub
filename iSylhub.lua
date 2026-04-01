@@ -4,8 +4,12 @@ local games = {
     [131716211654599] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fisch.lua",
     [78632820802305] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/GetFish.lua",
     [130342654546662] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/SambungKata.lua",
+    -- CDID
     [110369730911937] = "https://raw.githubusercontent.com/Fdhlnn23/cedid/refs/heads/main/Jatim-cedid.lua",
     [9508940498] = "https://raw.githubusercontent.com/Fdhlnn23/cedid/refs/heads/main/Jateng-cedid.lua",
+    [10515724397] = "https://raw.githubusercontent.com/Fdhlnn23/cedid/refs/heads/main/Jakarta-cedid.lua",
+    [9233343468] = "https://raw.githubusercontent.com/Fdhlnn23/cedid/refs/heads/main/Jabar-cedid.lua",
+    -- ============================================================
     [6701277882] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fish%20it.lua",
     [9186719164] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/SailorPieces.lua",
 }
