@@ -7,6 +7,7 @@ local games = {
     [110369730911937] = "https://raw.githubusercontent.com/Fdhlnn23/cedid/refs/heads/main/Jatim-cedid.lua",
     [9508940498] = "https://raw.githubusercontent.com/Fdhlnn23/cedid/refs/heads/main/Jateng-cedid.lua",
     [6701277882] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/Fish%20it.lua",
+    [9186719164] = "https://raw.githubusercontent.com/iSylvesterr/library/refs/heads/main/SailorPieces.lua",
 }
 
 if game.GameId == 0 then
